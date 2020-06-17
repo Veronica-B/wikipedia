@@ -1,6 +1,7 @@
 import React from 'react';
 import About from './pages/about'
 import Home from './pages/home'
+import Contact from './pages/contact'
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,6 +23,10 @@ function App() {
             <li>
               <Link to="/about">About</Link>
             </li>
+
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
           </ul>
         </nav>
 
@@ -33,6 +38,9 @@ function App() {
           </Route>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route exact path="/contact">
+            <Contact />
           </Route>
         </Switch>
         </div>
