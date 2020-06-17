@@ -1,50 +1,11 @@
 import React from 'react';
-import About from './pages/about'
-import Home from './pages/home'
-import Contact from './pages/contact'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import Navbar from './components/navbar'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-         <Router>
-       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </nav>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Switch>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/contact">
-            <Contact />
-          </Route>
-        </Switch>
-        </div>
-      </Router>
+    <Navbar />
     </div>
   );
 }
