@@ -12,6 +12,8 @@ import '../App.css';
 
 function Navbar() {
     return(
+        //All the router stuff (ex:links, switches, etc) must all be in the Router tag. 
+        //You can add divs and classnames within
     <Router>
 <div>
  <nav>
