@@ -40,15 +40,15 @@ class Contact extends React.Component {
             <div className="App">
             {contact.map(data=> <div>{data.first_name}</div>)} 
     This is our contact form
-   <form method="POST">
-       <label htmlFor="Firstname">First Name:</label>
-       <input id="Firstname" type="text"/>
-       <label htmlFor="Lastname">Last Name:</label>
-       <input id="Lastname" type="text"/>
+   <form method="POST" action="/api/contact">
+       <label htmlFor="first_name">First Name:</label>
+       <input name="first_name" type="text"/>
+       <label htmlFor="last_name">Last Name:</label>
+       <input name="last_name" type="text"/>
        <label htmlFor="email">E-mail:</label>
-       <input id="email" type="email"/>
+       <input name="email" type="email"/>
        <label htmlFor="message">Message:</label>
-       <textarea id="message"/>
+       <textarea name="message"/>
        <button>Submit</button>
     </form> 
 </div>
