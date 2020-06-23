@@ -17,7 +17,7 @@ function Navbar() {
         //You can add divs and classnames within
     <Router>
 {/*Front-end starts here */}
-<react.fragment>
+<React.Fragment>
       <head>
 
       </head>
@@ -65,7 +65,7 @@ function Navbar() {
      <Verification />
    </Route>
  </Switch>
- </react.fragment>
+ </React.Fragment>
 </Router>
     )
 }
