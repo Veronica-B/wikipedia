@@ -18,6 +18,7 @@ function Navbar() {
     <Router>
 
 {/*Front-end starts here */}
+<React.Fragment>
 
       <head>
 
@@ -66,6 +67,7 @@ function Navbar() {
      <Verification />
    </Route>
  </Switch>
+ </React.Fragment>
  
 </Router>
     )
