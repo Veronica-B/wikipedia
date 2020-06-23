@@ -16,8 +16,10 @@ function Navbar() {
         //All the router stuff (ex:links, switches, etc) must all be in the Router tag. 
         //You can add divs and classnames within
     <Router>
+
 {/*Front-end starts here */}
 <React.Fragment>
+
       <head>
 
       </head>
@@ -46,9 +48,9 @@ function Navbar() {
 
       </section>
       </header>
-      
 
 {/*Front-end ends here */}
+
  {/* A <Switch> looks through its children <Route>s and
      renders the first one that matches the current URL. */}
        <Switch>
@@ -66,6 +68,7 @@ function Navbar() {
    </Route>
  </Switch>
  </React.Fragment>
+ 
 </Router>
     )
 }
