@@ -12,6 +12,8 @@ let router =require('./Routes/apiContact')
 app.use(express.json()); // turns my app into a json 
 app.use(cors());
 
+
+//sets server up
 app.use('/api', router);{
     const port =  8080
     app.listen(port, () => {

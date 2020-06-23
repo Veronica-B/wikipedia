@@ -11,9 +11,12 @@ const bodyParser = require('body-parser')
 router.use(bodyParser.urlencoded({extended: false}))
 const selectAll= 'SELECT * FROM Form ';
 
+
+//creates connection to mysql
 const connection = mysql.createConnection({
 
 });
+
 
 connection.connect((err,connection) =>{
     if(err){
@@ -23,6 +26,24 @@ connection.connect((err,connection) =>{
     console.log('Connected!:)');
 }})
   
+router.get('/contact',(req,res)=>{
+    connection.query(selectAll, (err, data) => {
+      if(err) throw err;
+        res.send(data)
+        console.log(err)
+    })
+})
+
+router.get('/contact/:contact_id',(req, res)=>{
+    connection.query(`${selectAll} WHERE contact_id = ${req.params.contact_id}`, (err, result) => {
+            if(err) throw err;
+            console.log(result);
+
+            res.send(result)
+            // res.end()
+            
+    });
+});
 
 router.post('/contact', (req, res) => {
     console.log('initially working')
@@ -44,11 +65,29 @@ connection.query(insertInto, [ first_name, last_name, email, message], (err, dat
           if(err) throw err;
           console.log(`it works heres a name: ${first_name} `)
           res.end()
-    
-
 })
+});
+router.put('/contact/:contact_id',(req, res)=>{
+    connection.query(`UPDATE Form SET first_name = 'it works for now' WHERE contact_id = ${req.params.contact_id}`, (err, result) => {
+        
+            if(err) throw err;
 
+            console.log(result);
+
+            res.send(result)
+            // res.end()
+            
     });
+});
+router.delete('/contact/:contact_id',(req, res)=>{
+    connection.query(`DELETE FROM Form WHERE contact_id = ${req.params.contact_id}`, (err, result) => {
+            if(err) throw err;
+            console.log(result);
+            res.send(result)
+            // res.end()
+            
+    });
+});
 
 // console.log(values)
 
