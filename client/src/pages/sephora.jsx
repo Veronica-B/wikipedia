@@ -5,7 +5,18 @@ import React from 'react';
 function Sephora (){
     return (
         
-<div> This is the Sephora page </div>
+    <React.Fragment> This is the Sephora page 
+
+        <main>
+
+
+
+
+
+        </main>
+        
+    </React.Fragment>
+
     )
 } 
 

@@ -17,9 +17,16 @@ function Navbar() {
         //You can add divs and classnames within
     <Router>
 {/*Front-end starts here */}
-<div>
- <nav>
-   <ul>
+<react.fragment>
+      <head>
+
+      </head>
+
+      <header>
+      <section className="headerContainer">
+      <img src="" class="heroLogo" alt="wiki logo" />
+      <nav className="navbar">
+   <ul className="nav-links">
      <li>
        <Link to="/">Home</Link>
      </li>
@@ -36,6 +43,11 @@ function Navbar() {
      </li>
    </ul>
  </nav>
+
+      </section>
+      </header>
+      
+
 {/*Front-end ends here */}
  {/* A <Switch> looks through its children <Route>s and
      renders the first one that matches the current URL. */}
@@ -53,7 +65,7 @@ function Navbar() {
      <Verification />
    </Route>
  </Switch>
- </div>
+ </react.fragment>
 </Router>
     )
 }
