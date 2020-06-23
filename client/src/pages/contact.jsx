@@ -38,7 +38,7 @@ class Contact extends React.Component {
               console.log(contact);
           return (
             <div className="App">
-            {contact.map(data=> <div>{data.first_name}</div>)} 
+            {/* {contact.map(data=> <div>{data.first_name}</div>)}  */}
     This is our contact form
    <form method="POST" action="/api/contact">
        <label htmlFor="first_name">First Name:</label>

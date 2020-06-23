@@ -14,7 +14,11 @@ const selectAll= 'SELECT * FROM Form ';
 
 //creates connection to mysql
 const connection = mysql.createConnection({
-
+    host:"localhost",
+    port:3306,
+    user:'root',
+    password:'Password',
+    database:"contact_db"
 });
 
 
@@ -79,6 +83,7 @@ router.put('/contact/:contact_id',(req, res)=>{
             
     });
 });
+
 router.delete('/contact/:contact_id',(req, res)=>{
     connection.query(`DELETE FROM Form WHERE contact_id = ${req.params.contact_id}`, (err, result) => {
             if(err) throw err;
