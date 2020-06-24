@@ -8,17 +8,17 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.use(bodyParser.urlencoded({extended: false}))
 let router =require('./Routes/apiContact')
-
+require('dotenv').config();
 app.use(express.json()); // turns my app into a json 
 app.use(cors());
 
 
 //sets server up
 app.use('/api', router);{
-    const port =  8080
-    app.listen(port, () => {
-        console.log(port)
-      console.log(`Server running on port ${port}`);
+    // const port =  8080
+    app.listen(process.env.PORTSERVER, () => {
+        console.log(process.env.PORTSERVER)
+      console.log(`Server running on port ${process.env.PORTSERVER}`);
       console.log(router)
     })
 };

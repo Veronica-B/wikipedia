@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../components/footer'
 
 class Contact extends React.Component {
         // const [users, setMessage]= useState({customers: [] });
