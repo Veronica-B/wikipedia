@@ -1,0 +1,63 @@
+.logo_firstname{
+    text-align: center;
+    font-family: Text,Georgia,Times,Times,serif;
+}
+
+.wikipedia_logo {
+    height: 250px;
+    width: 250px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+   
+}
+
+/* Search bar  */
+.ui.input {
+    text-align: center;
+    margin: 4em auto;
+    color: #000;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .search {
+    background: #fff;
+    color: #000;
+    box-shadow: 1px 1px 0px #8e8a8a;
+    font-size: 18px;
+    line-height: 22px;
+    height: 40px;
+    max-width: 100%;
+    margin: 0;
+    border: 2px solid #B0BABF;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    -webkit-box-flex: 1;
+    flex: 1 0 auto;
+    display: inline-block;
+  }
+  
+  .ui.input > input {
+    border-top-right-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+    text-align: left;
+    margin-right: -2px;
+  }
+  
+  
+  #input-search:hover, #input-search .active {
+    border-color: blue;
+    outline: none;
+  }
+  
+  .ui.input > button:hover, button:active, button:focus {
+    outline: none;
+    color: blue;
+  }
+  
+  input {
+    
+    width: 30%;
+  }
+  
