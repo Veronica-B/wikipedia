@@ -15,18 +15,10 @@ app.use(cors());
 
 //sets server up
 app.use('/api', router);{
-    // const port =  8080
     app.listen(process.env.PORTSERVER, () => {
-        console.log(process.env.PORTSERVER)
       console.log(`Server running on port ${process.env.PORTSERVER}`);
-      console.log(router)
     })
 };
-
-
-// router.get('/', function (req, res) {
-//   res.send("hello");
-// });
 
 // app.listen(process.env.PORT || 8080);
 
