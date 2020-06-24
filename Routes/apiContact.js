@@ -72,13 +72,21 @@ connection.query(insertInto, [ first_name, last_name, email, message], (err, dat
 })
 });
 router.put('/contact/:contact_id',(req, res)=>{
-    connection.query(`UPDATE Form SET first_name = 'it works for now' WHERE contact_id = ${req.params.contact_id}`, (err, result) => {
+  
+    const first_name= req.body.first_name;
+    const last_name =req.body.last_name;
+    const email =req.body.email;
+    const message =req.body.message;
+
+
+    connection.query('UPDATE Form SET `first_name` = ? , `last_name` = ?, `email`= ?, `message` = ? WHERE `contact_id` = ' + req.params.contact_id ,
+    [ first_name, last_name, email, message], (err, result) => {
         
             if(err) throw err;
 
             console.log(result);
 
-            res.send(result)
+            res.send(req.body);
             // res.end()
             
     });
