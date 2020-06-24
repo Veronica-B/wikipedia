@@ -4,7 +4,7 @@ const router = require('express').Router();
 const mysql = require('mysql');
 const bodyParser = require('body-parser')
 // const cors= require('cors')
-// require('dotenv').config();
+require('dotenv').config();
 // app.use(cors())
 
 //middleware that makes it process POST requests easier 
@@ -14,11 +14,11 @@ const selectAll= 'SELECT * FROM Form ';
 
 //creates connection to mysql
 const connection = mysql.createConnection({
-    host:"localhost",
-    port:3306,
-    user:'root',
-    password:'Password',
-    database:"contact_db"
+    host: process.env.MYSQL_HOST,
+    port:process.env.MYSQL_HPORT,
+    user:process.env.MYSQL_HUSER,
+    password:process.env.MYSQL_HPASSWORD,
+    database:process.env.MYSQL_HDATABASE
 });
 
 
