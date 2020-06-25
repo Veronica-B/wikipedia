@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../components/footer';
 import '../css/home.css'
 
 
@@ -12,13 +11,19 @@ function Home() {
 
                     <img className="wikipedia_logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" />
                     <div className="ui action input">
+<<<<<<< HEAD
                         <input type="text" placeholder="Search Wikipedia..." className="search" id="input-search" />
+=======
+                    <form action="http://localhost:3000/sephora" target= "_blank" method="GET">
+                        <input type="text" placeholder="Search Wikipedia..." class="search" id="input-search" />
+>>>>>>> 6d1fe845cb42b2dc45a1e400051c780a12fd6d13
                         <button className="search ui button btn-wiki" id="button-search">Search</button>
+                        </form>
                     </div>
                 </div>
                 <section>
-                    
-                    <section className="history_container">
+
+                 <section className="history_container">
 
                         <iframe width="2900" height="355" src="https://www.youtube.com/embed/oVFPW0r4jWk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <p className="info_hist">
