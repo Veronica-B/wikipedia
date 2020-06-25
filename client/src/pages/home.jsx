@@ -14,8 +14,11 @@ function Home() {
                 </div>
                 <section>
     <div className="ui action input">
+    <form action="http://localhost:3000/sephora" target= "_blank" method="GET">
       <input type="text" placeholder="Search Wikipedia..." class="search" id="input-search" />
+     
       <button className="search ui button btn-wiki" id="button-search">Search</button>
+      </form>
       </div>
   
   </section>
