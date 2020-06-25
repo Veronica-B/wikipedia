@@ -89,25 +89,54 @@
 ================== MAIN CONTENT PAGE =================
 ===================*/
 
-.feat-text-card {
-  height: 350px;
-  max-width: 350px;
-  margin: 200px 20px 40px 1020px;
-  /* display: flex;
-  justify-content: flex-end; */
+.grid-container {
+  display: grid;
+  grid-template-columns: 600px 600px;
+  padding: 5px;
+  margin: 200px 0px 0px 125px;
+  /* margin-top: 200px; */
+  /* max-width: 910px; */
+}
 
+
+
+.feat-text-card {
+  /* height: 500px;
+  max-width: 350px;
+  margin: 200px 20px 40px 1020px; */
+  margin-left: 150px;
 }
 
 .sephora-heroText {
-  height: 30px;
-  width: 300px;
-  display: inline-block;
+  /* height: 30px;
+  width: 300px; */
+  /* display: inline-block; */
   text-align: center;
+}
+
+.feat-text-desc {
+  max-width: 550px;
 }
 
 td {
   padding: 7px;
 }
+
+
+.info-text-card {
+  /* height: 550px;
+  width: 400px; */
+}
+
+.sephora-info {
+margin-top: 100px;
+line-height: 22px;
+}
+
+.sephora-info p {
+  /* line-height: 35px; */
+}
+
 
 
 }
