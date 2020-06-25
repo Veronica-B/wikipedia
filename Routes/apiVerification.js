@@ -70,4 +70,32 @@ connection.query(insertInto, [ article_name, section_header, section], (err, dat
 })
 });
 
+//updates database entry
+router.put('/verification/:user_id',(req, res)=>{
+  
+    const article_name= req.body.article_name;
+    const section_header =req.body.section_header;
+    const section =req.body.section;
+
+    connection.query('UPDATE User_changes SET `article_name` = ? , `section_header` = ?, `section`= ? WHERE `user_id` = ' + req.params.user_id ,
+    [ article_name, section_header, section], (err, result) => {
+        
+            if(err) throw err;
+
+            console.log(result);
+
+            res.send(req.body);       
+    });
+});
+
+
+//deletes a single database entry
+router.delete('/verification/:user_id',(req, res)=>{
+    connection.query(`DELETE FROM User_changes WHERE user_id = ${req.params.user_id}`, (err, result) => {
+            if(err) throw err;
+            console.log(result);
+            res.send(result)    
+    });
+});
+
 module.exports = router;
