@@ -14,12 +14,12 @@ app.use(express.json()); // turns my app into a json
 app.use(cors());
 
 //sets server up
-app.listen(process.env.PORTSERVER, () => {
-  console.log(`Server running on port ${process.env.PORTSERVER}`);
+app.listen(8080, () => {
+  console.log(`Server running on port 8080`);
 })
 
 
-app.use('/api', router);
-app.use('/api', router_v);
+// app.use('/api', router);
+// app.use('/api', router_v);
 
 
