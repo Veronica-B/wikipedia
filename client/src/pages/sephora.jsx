@@ -1,4 +1,5 @@
 import React from 'react';
+// import logo from './public/assets/Sephora_logo.png';
 
 
 
@@ -11,7 +12,9 @@ function Sephora (){
         <article className="grid-container">
 
         <section className="info-text-card">
-            <div className="slogo-container"><img className="sephora-logo" src="./assets/Sephora_logo.png" alt="sephora logo" /></div>
+            <div className="slogo-container"></div>
+            {/* <img className="sephora-logo" src="./src/assets/Sephora_logo.png" alt="sephora logo" /> */}
+            {/* <img className="" src={logo} alt="slogo" /> */}
             <div className="sephora-info">
                 <h3>OVERVIEW</h3>
                 <p>Sephora is a French multinational chain of personal care and beauty stores. Featuring nearly 3,000 brands,
