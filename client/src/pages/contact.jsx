@@ -1,5 +1,7 @@
 import React from 'react';
-
+import './contact.css' ; 
+import envelope from './imgs/envelope-img.png'
+import envelope2 from './imgs/envelope2.jpg'
 class Contact extends React.Component {
         // const [users, setMessage]= useState({customers: [] });
         
@@ -39,20 +41,41 @@ class Contact extends React.Component {
           return (
             <div className="App">
             {/* {contact.map(data=> <div>{data.first_name}</div>)}  */}
-    This is our contact form
-   <form method="POST" action="/api/contact">
-       <label htmlFor="first_name">First Name:</label>
-       <input name="first_name" type="text"/>
-       <label htmlFor="last_name">Last Name:</label>
-       <input name="last_name" type="text"/>
-       <label htmlFor="email">E-mail:</label>
-       <input name="email" type="email"/>
-       <label htmlFor="message">Message:</label>
-       <textarea name="message"/>
-       <button>Submit</button>
+            <div className="hero-image">
+      <div className = "container">
+        <h1><span>CONTACT US </span></h1>
+    
+      </div>
+     
+     
+      
+    </div>
+    <i className="fa fa-arrow-circle-down drop-down-arrow" />
+    <div className = "contact-info-style">
+    <h2>TELL US !</h2>
+    <p>phone Number: (123)-456-789  | email: info-en@wikimedia.org </p>
+    </div>
+
+   <div >
+   <form method="POST" action="/api/contact" className= "contact-form" >
+     <label htmlFor="first_name" className ="label-design" >First Name:</label>
+       <input name="first_name" type="text" className="contact-form-text" placeholder="First Name:"></input>
+       <label htmlFor="last_name" className ="label-design" >Last Name:</label>
+       <input name="last_name" type="text" className="contact-form-text" placeholder="Last Name:"/>
+       <label htmlFor="email" className ="label-design" >E-mail:</label>
+       <input name="email" type="email" className="contact-form-text" placeholder="Email:"/>
+       <label htmlFor="message" className ="label-design">Message:</label>
+       <textarea name="message" className="contact-form-text" placeholder="Message:"/>
+       
+
+       <button className="contact-form-btn btn-setting">Submit</button>
     </form> 
+
+   
+    </div>
 </div>
     )
 } }
 
 export default Contact;
+/*<img  className = "evelope-img"src = {envelope2} />*/
