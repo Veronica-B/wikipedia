@@ -93,7 +93,7 @@
   display: grid;
   grid-template-columns: 600px 600px;
   padding: 5px;
-  margin: 200px 0px 0px 125px;
+  margin: 200px 0px 100px 125px;
   /* margin-top: 200px; */
   /* max-width: 910px; */
 }
@@ -123,8 +123,8 @@ td {
 }
 
 .slogo-container {
-  background: url("../src/assets/Sephora_logo.png") no-repeat;
-  background-size: 300px 50px;
+  background: url("../src/assets/Sephora_logo.png") no-repeat center;
+  background-size: 400px 50px;
   width: 600px;
   height: 50px;
 }
@@ -135,7 +135,7 @@ td {
 }
 
 .sephora-info {
-margin-top: 100px;
+margin-top: 150px;
 line-height: 22px;
 }
 
