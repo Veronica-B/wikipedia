@@ -15,6 +15,22 @@ function Sephora (){
             <div className="slogo-container"></div>
             {/* <img className="sephora-logo" src="./src/assets/Sephora_logo.png" alt="sephora logo" /> */}
             {/* <img className="" src={logo} alt="slogo" /> */}
+            <div className="jump-to-sec"> 
+            
+                <label for="subject">JUMP TO:</label>
+                    <select id="subject" name="subject" class="jumpTo-btn">
+                        <option value="selectSection">Select section..</option>
+                        <option value="overview">Overview</option>
+                        <option value="history">History</option>
+                        <option value="operations">Operations</option>
+                        <option value="applications">Applications</option>
+                        <option value="acquisitions">Acquisitions</option>
+                        <option value="controversies">Controversies</option>
+                        <option value="lawsuits">Lawsuits</option>
+                        <option value="environmentalRecord">Environmental Record</option>
+                        <option value="awardsHonors">Awards & Honors</option>
+                    </select>
+            </div>                
             <div className="sephora-info">
                 <h3>OVERVIEW</h3>
                 <p>Sephora is a French multinational chain of personal care and beauty stores. Featuring nearly 3,000 brands,
