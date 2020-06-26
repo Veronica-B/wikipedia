@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App">
     <Navbar />
+<<<<<<< HEAD
 
      {/* <Home /> */}
    
@@ -17,6 +18,10 @@ function App() {
     {/* <Home /> */}
     <Footer />
 
+=======
+     {/* <Home /> */}
+    <Footer /> 
+>>>>>>> 751e83f5385a32b7f347043cc2b0b9238736696e
     </div>
   );
 }

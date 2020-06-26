@@ -1,4 +1,5 @@
 import React from 'react';
+// import logo from './public/assets/Sephora_logo.png';
 
 
 
@@ -8,6 +9,22 @@ function Sephora (){
     <React.Fragment>
 
         <main>
+        <article className="grid-container">
+
+        <section className="info-text-card">
+            <div className="slogo-container"></div>
+            {/* <img className="sephora-logo" src="./src/assets/Sephora_logo.png" alt="sephora logo" /> */}
+            {/* <img className="" src={logo} alt="slogo" /> */}
+            <div className="sephora-info">
+                <h3>OVERVIEW</h3>
+                <p>Sephora is a French multinational chain of personal care and beauty stores. Featuring nearly 3,000 brands,
+                along with its own private label, Sephora offers beauty products including cosmetics, skincare, body, fragrance, 
+                nail color, beauty tools, and haircare.</p>
+                <p>The company was founded in Limoges in 1970 and is currently based in Paris. Sephora is owned by luxury conglomerate
+                 LVMH as of 1997. The name comes from the Greek spelling of Zipporah (Greek: Σεπφώρα, Sepphōra), wife of Moses.</p>
+            </div>
+        </section>
+
         <section className="feat-text-card">
 
         <h3 className="sephora-heroText">SEPHORA</h3>
@@ -68,12 +85,7 @@ function Sephora (){
             </table>
         </div>
         </section>
-
-        <section className="info-text-card">
-            
-        </section>
-
-
+        </article>
 
 
         </main>
