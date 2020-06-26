@@ -19,6 +19,8 @@ function Sephora (){
             
                 <label for="subject">JUMP TO:</label>
                     <select id="subject" name="subject" class="jumpTo-btn">
+                        <option value="selectSection">Select section..</option>
+                        <option value="overview">Overview</option>
                         <option value="history">History</option>
                         <option value="operations">Operations</option>
                         <option value="applications">Applications</option>
