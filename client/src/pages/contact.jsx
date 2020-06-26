@@ -2,6 +2,8 @@ import React from 'react';
 import './contact.css' ; 
 import envelope from './imgs/envelope-img.png'
 import envelope2 from './imgs/envelope2.jpg'
+
+
 class Contact extends React.Component {
         // const [users, setMessage]= useState({customers: [] });
         

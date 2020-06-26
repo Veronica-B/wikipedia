@@ -1,0 +1,91 @@
+.logo_firstname{
+    text-align: center;
+    font-family: Text,Georgia,Times,Times,serif;
+}
+
+.wikipedia_logo {
+    height: 250px;
+    width: 250px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+   
+}
+.initial_container{
+    padding: 170px ;
+}
+.wk_name{
+    padding: 30px;
+}
+.history_container{
+  display: flex;
+  align-items: center;
+  padding: 20px 0 100px 195px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+    
+}
+.video_title{
+  padding-bottom: 70px;
+}
+.info_hist{
+  text-align: center;
+  padding:0 75px 45px 45px;
+}
+
+/* Search bar  */
+.ui.input {
+    text-align: center;
+    margin: 4em auto;
+    color: #000;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .search {
+    background: #fff;
+    color: #000;
+    box-shadow: 1px 1px 0px #8e8a8a;
+    font-size: 18px;
+    line-height: 22px;
+    height: 40px;
+    border: 2px solid #B0BABF;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  
+  }
+  
+
+  
+  
+  #input-search:hover, #input-search .active {
+    border-color: blue;
+    outline: none;
+  }
+  
+  .ui.input > button:hover, button:active, button:focus {
+    outline: none;
+    color: blue;
+  }
+  
+  input {
+    
+    width: 30%;
+  }
+  /* responsive */
+  /* MQ */
+  @media screen and (max-width: 768px){
+    #input-search{
+      width: 250px;
+    }
+
+    .history_container{
+      display: flex;
+      flex-direction: column;
+      padding: 10px 0 70px 30px;
+    }
+    iframe{
+      width: 400px;
+      height: 350px;
+    }
+  }
