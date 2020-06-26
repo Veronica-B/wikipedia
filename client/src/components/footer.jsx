@@ -2,73 +2,76 @@ import React from 'react';
 import '../css/footer.css'
 
 function Footer() {
-    return (
-        <React.Fragment>
-        
-            <div className="footer">
-  <div className="contain">
-  <div className="col">
-    <h1>Wikipedia</h1>
-    <ul>
-      <li>About</li>
-      <li>Mission</li>
-      <li>Services</li>
-      <li>Social</li>
-      <li>Get in touch</li>
-    </ul>
-  </div>
-  <div className="col">
-    <h1>Products</h1>
-    <ul>
-      <li>About</li>
-      <li>Mission</li>
-      <li>Services</li>
-      <li>Social</li>
-      <li>Get in touch</li>
-    </ul>
-  </div>
-  <div className="col">
-    <h1>Accounts</h1>
-    <ul>
-      <li>About</li>
-      <li>Mission</li>
-      <li>Services</li>
-      <li>Social</li>
-      <li>Get in touch</li>
-    </ul>
-  </div>
-  <div className="col">
-    <h1>Resources</h1>
-    <ul>
-      <li>Webmail</li>
-      <li>Redeem code</li>
-      <li>WHOIS lookup</li>
-      <li>Site map</li>
-      <li>Web templates</li>
-      <li>Email templates</li>
-    </ul>
-  </div>
-  <div className="col">
-    <h1>Support</h1>
-    <ul>
-      <li>Contact us</li>
-      <li>Web chat</li>
-      <li>Open ticket</li>
-    </ul>
-  </div>
-  <div className="col social">
-    <h1>Social</h1>
-    {/* <ul>
-      <li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"/></li>
-      <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"/></li>
-      <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"/></li>
-    </ul> */}
-  </div>
-<div className="clearfix"></div>
-</div>
-</div>
-        </React.Fragment>
-    )
+  return (
+    <React.Fragment>
+
+      <div className="footer">
+        <div className="contain">
+          <div className="col">
+            <h1>Wikipedia</h1>
+            <ul>
+              <li>About</li>
+              <li>Mission</li>
+              <li>Wikipedia</li>
+              <li>Wikibooks</li>
+              <li>Wikiversityh</li>
+            </ul>
+          </div>
+          <div className="col">
+            <h1>Wikinews</h1>
+            <ul>
+              <li>Wiktionary</li>
+              <li>Wikisource</li>
+              <li>Wikiquote</li>
+              <li>Wikivoyage</li>
+              <li>Wikimedia Commons</li>
+            </ul>
+          </div>
+          <div className="col">
+            <h1>Wikidata</h1>
+            <ul>
+              <li>Wikispecies</li>
+              <li>MediaWiki</li>
+              <li>Wikimedia</li>
+              <li>Chapters</li>
+              <li>Get Chapters</li>
+            </ul>
+          </div>
+          <div className="col">
+            <h1>Organizations</h1>
+            <ul>
+              <li>Wikimedia</li>
+              <li>Thematic</li>
+              <li>Wikimedia User</li>
+              <li>Site map</li>
+              <li>Groups</li>
+
+            </ul>
+          </div>
+          <div className="col">
+            <h1>Support</h1>
+            <ul>
+              <li>Contact us</li>
+              <li>Open Wikipedia</li>
+            </ul>
+          </div>
+          <div className="col social">
+            <h1>Social</h1>
+            <ul>
+
+
+              <a href="https://twitter.com/explore" className="fa fa-twitter"></a>
+              <a href="https://www.instagram.com/" className="fa fa-instagram"></a>
+              <a href="" className="fa fa-wikipedia-w" aria-hidden="true"></a>
+              <a href="https://mtouch.facebook.com/reg/?ref=dblsoft=hjk" className="fa fa-facebook-official" aria-hidden="true"></a>
+
+            </ul>
+          </div>
+          <div className="clearfix"></div>
+        </div>
+      </div>
+    </React.Fragment>
+  )
 }
 
 

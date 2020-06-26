@@ -2,7 +2,7 @@
     width: 100%;
     position: relative;
     height: auto;
-    background-color: #070617;
+    background-color: #3d405b;
   }
   .footer .col {
     width: 190px;
@@ -20,8 +20,8 @@
     font-size: 12px;
     line-height: 17px;
     padding: 20px 0px 5px 0px;
-    color: rgba(255,255,255,0.2);
-    font-weight: normal;
+    color:black;
+    font-weight:bolder;
     text-transform: uppercase;
     letter-spacing: 0.250em;
   }
@@ -31,7 +31,7 @@
     padding: 0;
   }
   .footer .col ul li {
-    color: #999999;
+    color: white;
     font-size: 14px;
     font-family: inherit;
     font-weight: bold;
@@ -54,6 +54,11 @@
   }
   .clearfix {
     clear: both;
+  }
+  .fa{
+    font-size: 48px;
+    padding: 20px 20px 10px 20px;
+    color:white;
   }
   @media only screen and (min-width: 1280px) {
     .contain {
