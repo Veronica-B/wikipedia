@@ -41,9 +41,12 @@ function Sephora (){
             </div>
         </section>
 
+        <div className="vline"></div>
+
         <section className="feat-text-card">
 
-        <h3 className="sephora-heroText">SEPHORA</h3>
+        {/* <h3 className="sephora-heroText">SEPHORA</h3> */}
+        <div className="slogo-containertwo"></div>
         <div className="feat-text-container">
             <table className="feat-text-desc">
                 <tbody>

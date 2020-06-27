@@ -33,16 +33,22 @@ function Navbar() {
        <Link to="/">Home</Link>
      </li>
      <li>
-       <Link to="/sephora">Sephora</Link>
+       <Link to="/sephora">(sep)</Link>
      </li>
 
+     {/* <li>
+       <Link to="/donate">Donate</Link>
+     </li> */}
+     
      <li>
        <Link to="/contact">Contact</Link>
      </li>
 
      <li>
-       <Link to="/verification">Verify</Link>
+       <Link to="/verification">(verify)</Link>
      </li>
+
+     
    </ul>
  </nav>
 
@@ -60,6 +66,9 @@ function Navbar() {
    <Route exact path="/">
      <Home />
    </Route>
+   {/* <Route exact path="/donate">
+     <Donate />
+   </Route> */}
    <Route exact path="/contact">
      <Contact />
    </Route>

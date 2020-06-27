@@ -91,7 +91,7 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: 600px 600px;
+  grid-template-columns: 650px 125px 500px;
   padding: 5px;
   margin: 200px 0px 100px 125px;
   /* margin-top: 200px; */
@@ -104,7 +104,9 @@
   /* height: 500px;
   max-width: 350px;
   margin: 200px 20px 40px 1020px; */
-  margin-left: 150px;
+  margin-left: 100px;
+  background-color: #A5A58D;
+  border-radius: 10px;
 }
 
 .sephora-heroText {
@@ -112,6 +114,13 @@
   width: 300px; */
   /* display: inline-block; */
   text-align: center;
+}
+
+.slogo-containertwo {
+  background: url("../src/assets/Sephora_logo.png") no-repeat center;
+  background-size: 200px 25px;
+  width: 400px;
+  height: 50px;
 }
 
 .feat-text-desc {
@@ -122,16 +131,22 @@ td {
   padding: 7px;
 }
 
+.vline {
+  height: 550px;
+  border-right: 1px solid black;
+  margin-top: 50px;
+}
+
 .slogo-container {
   background: url("../src/assets/Sephora_logo.png") no-repeat center;
   background-size: 595px 100px;
-  width: 600px;
+  width: 650px;
   height: 100px;
+  margin-bottom: 75px;
 }
 
 .info-text-card {
-  /* height: 550px;
-  width: 400px; */
+ margin-top: 75px;
 }
 
 .sephora-info {
