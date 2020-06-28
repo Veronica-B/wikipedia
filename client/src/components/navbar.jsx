@@ -21,12 +21,12 @@ function Navbar() {
 <React.Fragment>
 
       <head>
-
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
       </head>
 
       <header>
       <section className="headerContainer">
-      <img src="" class="heroLogo" alt="wiki logo" />
+      <div className="wiki-logo"></div>
       <nav className="navbar">
    <ul className="nav-links">
      <li>
