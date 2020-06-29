@@ -14,17 +14,6 @@ class Contact extends React.Component {
             error : false
           }
         }
-        
-          //this is the functional version of componenetDidMount
-            //fetches my api
-            // React.useEffect(() => {
-            //   fetch('http://localhost:8080/api/contact')
-            //   .then (console.log())
-            //   .then(res => res.json())
-            //   .then(data => setMessage({customers:[data]}))
-            //   .then( console.log(users))
-            // })
-        
             componentDidMount(){
               fetch('http://localhost:8080/api/contact')
               .then((res)=> res.json())
@@ -35,14 +24,13 @@ class Contact extends React.Component {
                   })
                 }
               )
-            //   .then( console.log( typeof data))
             }
             render(){
-              const {contact} = this.state;
-              console.log(contact);
+              // const {contact} = this.state;
+              // console.log(contact);
           return (
             <div className="App">
-            {/* {contact.map(data=> <div>{data.first_name}</div>)}  */}
+
             <div className="hero-image">
       <div className = "container">
         <h1><span>CONTACT US </span></h1>
