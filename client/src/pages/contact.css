@@ -119,7 +119,7 @@ body{
   .btn-setting{
       margin-bottom: 20px;
   }
-/***************** MEDIA QUERIES *******************/
+/***************** MEDIA QUERIES *******************
 
 @media only screen and (max-width: 425px){
 
@@ -158,6 +158,6 @@ body{
         float:none ; 
     }
 
-  }
+  }*/
 
   
