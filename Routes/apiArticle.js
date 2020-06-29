@@ -1,4 +1,3 @@
-
 const router = require('express').Router();
 const mysql = require('mysql');
 const bodyParser = require('body-parser')
@@ -10,7 +9,7 @@ require('dotenv').config();
 router.use(bodyParser.urlencoded({extended: false}))
 
 //Statement to SELECT ALL from the table Form
-const selectAll= 'SELECT * FROM User_changes ';
+const selectAll= 'SELECT * FROM article ';
 
 
 //creates connection to mysql
@@ -30,7 +29,7 @@ connection.connect((err,connection) =>{
         console.log('Connected! --Verify');
 }})
 
-router.get('/verification',(req,res)=>{
+router.get('/article',(req,res)=>{
     connection.query(selectAll, (err, data) => {
       if(err) throw err;
         res.send(data)
@@ -40,8 +39,8 @@ router.get('/verification',(req,res)=>{
 
 
 //shows one database entry, selected by unique id
-router.get('/verification/:user_id',(req, res)=>{
-    connection.query(`${selectAll} WHERE user_id = ${req.params.user_id}`, (err, result) => {
+router.get('/article/:article_id',(req, res)=>{
+    connection.query(`${selectAll} WHERE article_id = ${req.params.article_id}`, (err, result) => {
 
             if(err) throw err;
             console.log(result);
@@ -50,8 +49,18 @@ router.get('/verification/:user_id',(req, res)=>{
     });
 });
 
+// router.get('/article/:article_name',(req, res)=>{
+//     connection.query(`${selectAll} WHERE article_name = ${req.params.article_name}`, (err, result) => {
+
+//             if(err) throw err;
+//             console.log(result);
+//             res.send(result)
+            
+//     });
+// });
+
 //adds a database entry
-router.post('/verification', (req, res) => {
+router.post('/article', (req, res) => {
     console.log('initially working')
     console.log(req.body)
 
@@ -71,7 +80,7 @@ connection.query(insertInto, [ article_name, section_header, section], (err, dat
 });
 
 //updates database entry
-router.put('/verification/:user_id',(req, res)=>{
+router.put('/article/:user_id',(req, res)=>{
   
     const article_name= req.body.article_name;
     const section_header =req.body.section_header;
@@ -90,7 +99,7 @@ router.put('/verification/:user_id',(req, res)=>{
 
 
 //deletes a single database entry
-router.delete('/verification/:user_id',(req, res)=>{
+router.delete('/article/:user_id',(req, res)=>{
     connection.query(`DELETE FROM User_changes WHERE user_id = ${req.params.user_id}`, (err, result) => {
             if(err) throw err;
             console.log(result);

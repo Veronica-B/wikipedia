@@ -3,7 +3,29 @@ import React from 'react';
 
 
 
-function Sephora (){
+class Sephora extends React.Component{
+    constructor(props){
+        super(props)
+        this.state = {
+          article: [],
+          error : false
+        }
+      }
+
+    componentDidMount(){
+        fetch('http://localhost:8080/api/article/1')
+        .then((res)=> res.json())
+        .then(
+          (data) => {
+            this.setState({
+              article: data
+            })
+          }
+        )
+    }
+    render()
+    {
+        const {article} = this.state;
     return (
         
     <React.Fragment>
@@ -40,6 +62,7 @@ function Sephora (){
                  LVMH as of 1997. The name comes from the Greek spelling of Zipporah (Greek: Σεπφώρα, Sepphōra), wife of Moses.</p>
             </div>
         </section>
+
 
         <section className="feat-text-card">
 
@@ -101,6 +124,10 @@ function Sephora (){
             </table>
         </div>
         </section>
+        {article.map(data=> <div>{data.section_header1}</div>)}
+        {article.map(data=> <div>{data.section1}</div>)}
+        {article.map(data=> <div>{data.section_header2}</div>)}
+        {article.map(data=> <div>{data.section2}</div>)}
         </article>
 
 
@@ -108,7 +135,7 @@ function Sephora (){
         
     </React.Fragment>
 
-    )
+    )}
 } 
 
 export default Sephora;

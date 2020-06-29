@@ -42,7 +42,7 @@ class Contact extends React.Component {
               console.log(contact);
           return (
             <div className="App">
-            {/* {contact.map(data=> <div>{data.first_name}</div>)}  */}
+            {contact.map(data=> <div>{data.first_name}</div>)} 
             <div className="hero-image">
       <div className = "container">
         <h1><span>CONTACT US </span></h1>
