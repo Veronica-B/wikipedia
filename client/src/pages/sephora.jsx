@@ -3,7 +3,29 @@ import React from 'react';
 
 
 
-function Sephora (){
+class Sephora extends React.Component{
+    constructor(props){
+        super(props)
+        this.state = {
+          article: [],
+          error : false
+        }
+      }
+
+    componentDidMount(){
+        fetch('http://localhost:8080/api/article/1')
+        .then((res)=> res.json())
+        .then(
+          (data) => {
+            this.setState({
+              article: data
+            })
+          }
+        )
+    }
+    render()
+    {
+        const {article} = this.state;
     return (
         
     <React.Fragment>
@@ -106,6 +128,24 @@ function Sephora (){
             </table>
         </div>
         </section>
+        {/* {article.map(data=> <div>{data.section_header1}</div>)}
+        {article.map(data=> <div>{data.section1}</div>)}
+        {article.map(data=> <div>{data.section_header2}</div>)}
+        {article.map(data=> <div>{data.section2}</div>)}
+        {article.map(data=> <div>{data.section_header3}</div>)}
+        {article.map(data=> <div>{data.section3}</div>)}
+        {article.map(data=> <div>{data.section_header4}</div>)}
+        {article.map(data=> <div>{data.section4}</div>)}
+        {article.map(data=> <div>{data.section_header5}</div>)}
+        {article.map(data=> <div>{data.section5}</div>)}
+        {article.map(data=> <div>{data.section_header6}</div>)}
+        {article.map(data=> <div>{data.section6}</div>)}
+        {article.map(data=> <div>{data.section_header7}</div>)}
+        {article.map(data=> <div>{data.section7}</div>)}
+        {article.map(data=> <div>{data.section_header8}</div>)}
+        {article.map(data=> <div>{data.section8}</div>)}
+        {article.map(data=> <div>{data.section_header9}</div>)}
+        {article.map(data=> <div>{data.section9}</div>)} */}
         </article>
 
 
@@ -113,7 +153,7 @@ function Sephora (){
         
     </React.Fragment>
 
-    )
+    )}
 } 
 
 export default Sephora;

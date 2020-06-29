@@ -89,3 +89,24 @@
       height: 350px;
     }
   }
+  /*=======================
+================== MOBILE DEVICES =================
+===================*/
+
+@media screen and (max-width: 650px) and (min-width: 300px) {
+  #input-search{
+    width: 250px;
+    height: 50px;
+    padding-left: 10px;
+
+  }
+.initial_container{
+  
+  padding-left: 20px;
+}
+  
+  iframe{
+    width: 200px;
+    height: 350px;
+  }
+}
