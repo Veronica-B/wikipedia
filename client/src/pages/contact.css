@@ -4,7 +4,7 @@ body{
 .hero-image {
     position:relative;
     width:100%;
-    height:40vh;
+    height:50vh;
     overflow:hidden;
     background:url("./imgs/map.jpg") no-repeat center;
     background-color: gray;
@@ -21,7 +21,7 @@ body{
     font-weight: bold;
     border: 3px solid #f1f1f1;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -55,11 +55,11 @@ body{
 
 
 .drop-down-arrow{
-    padding-left: 710px ; 
+    padding-left: 699px ; 
     padding-top: 15px; 
-    padding-bottom: 10px ; 
+    padding-bottom: 20px ; 
     font-size: 50px ; 
-    color: #A5A58D ; 
+    color: #A5A58D  ; 
 }
 
 .contact-info-style{
@@ -82,6 +82,7 @@ body{
     padding-right: 200px ; 
     padding-left: 370px ;
     padding-top: 50px ; 
+    padding-bottom: 80px ; 
  
 
 }
