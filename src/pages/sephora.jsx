@@ -23,6 +23,8 @@ class Sephora extends React.Component{
           }
         )
     }
+
+
     render()
     {
         const {article} = this.state;
@@ -40,15 +42,15 @@ class Sephora extends React.Component{
             <div className="jump-to-sec"> 
             
                 <label for="subject">JUMP TO:</label>
-                    <select id="subject" name="subject" class="jumpTo-btn">
+                    <select id="subject" name="subject" class="jumpTo-btn" onchange= "">
                         <option value="selectSection">Select section..</option>
                         <option value="overview">Overview</option>
-                        <option value="history">History</option>
+                        <option value="history"> History</option>
                         <option value="operations">Operations</option>
                         <option value="applications">Applications</option>
                         <option value="acquisitions">Acquisitions</option>
                         <option value="controversies">Controversies</option>
-                        <option value="lawsuits">Lawsuits</option>
+                        <option href="#lawsuits" value="lawsuits">Lawsuits</option>
                         <option value="environmentalRecord">Environmental Record</option>
                         <option value="awardsHonors">Awards & Honors</option>
                     </select>
@@ -129,7 +131,7 @@ class Sephora extends React.Component{
         </div>
         </section>
         {/* {article.map(data=> <div>{data.section_header1}</div>)}
-        {article.map(data=> <div>{data.section1}</div>)}
+        {article.map(data=> <div>{data.section1}</div>)} */}
         {article.map(data=> <div>{data.section_header2}</div>)}
         {article.map(data=> <div>{data.section2}</div>)}
         {article.map(data=> <div>{data.section_header3}</div>)}
@@ -140,12 +142,12 @@ class Sephora extends React.Component{
         {article.map(data=> <div>{data.section5}</div>)}
         {article.map(data=> <div>{data.section_header6}</div>)}
         {article.map(data=> <div>{data.section6}</div>)}
-        {article.map(data=> <div>{data.section_header7}</div>)}
+        {article.map(data=> <div><a id="lawsuits">{data.section_header7}</a></div>)}
         {article.map(data=> <div>{data.section7}</div>)}
         {article.map(data=> <div>{data.section_header8}</div>)}
         {article.map(data=> <div>{data.section8}</div>)}
         {article.map(data=> <div>{data.section_header9}</div>)}
-        {article.map(data=> <div>{data.section9}</div>)} */}
+        {article.map(data=> <div>{data.section9}</div>)} 
         </article>
 
 

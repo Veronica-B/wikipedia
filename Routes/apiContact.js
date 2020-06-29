@@ -1,7 +1,7 @@
 
 const router = require('express').Router();
 const mysql = require('mysql');
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser');
 // const connection=require('./connection.js')
 require('dotenv').config();
 
@@ -66,7 +66,8 @@ router.post('/contact', (req, res) => {
         
 connection.query(insertInto, [ first_name, last_name, email, message], (err, data, fields)=> {
           if(err) throw err;
-          console.log(`it works heres a name: ${first_name} `)
+        //   console.log(`it works heres a name: ${first_name} `)
+        res.writeHead(301,{Location: 'http://localhost:3000/contact'});
           res.end()
 })
 });
