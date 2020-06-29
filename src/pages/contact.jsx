@@ -35,10 +35,7 @@ class Contact extends React.Component {
       <div className = "container">
         <h1><span>CONTACT US </span></h1>
     
-      </div>
-     
-     
-      
+      </div>    
     </div>
     <i className="fa fa-arrow-circle-down drop-down-arrow" />
     <div className = "contact-info-style">
