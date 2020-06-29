@@ -13,20 +13,7 @@ class Contact extends React.Component {
             error : false
           }
         }
-            componentDidMount(){
-              fetch('http://localhost:8080/api/contact')
-              .then((res)=> res.json())
-              .then(
-                (data) => {
-                  this.setState({
-                    contact: data
-                  })
-                }
-              )
-            }
             render(){
-              // const {contact} = this.state;
-              // console.log(contact);
           return (
             <div className="App">
 
@@ -34,10 +21,7 @@ class Contact extends React.Component {
       <div className = "container">
         <h1><span>CONTACT US </span></h1>
     
-      </div>
-     
-     
-      
+      </div>    
     </div>
   
     <i class="fas fa-chevron-circle-down drop-down-arrow"></i>
