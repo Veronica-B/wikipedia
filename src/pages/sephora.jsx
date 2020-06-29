@@ -28,6 +28,7 @@ class Sephora extends React.Component{
     render()
     {
         const {article} = this.state;
+        const articleArray= Object.entries(article);
     return (
         
     <React.Fragment>
@@ -56,7 +57,8 @@ class Sephora extends React.Component{
                     </select>
             </div>                
             <div className="sephora-info">
-                <h3>OVERVIEW</h3>
+            {/* {article.map(data=> <div>{Object.values(data)}</div>)} */} 
+    <h3>{Object.values(articleArray.section1)}</h3>
                 <div className="check-container"><i class="far fa-check-circle fa-lg"></i></div>
                 <div className="edit-text">[ edit ]</div>
                 <p>Sephora is a French multinational chain of personal care and beauty stores. Featuring nearly 3,000 brands,
@@ -130,24 +132,6 @@ class Sephora extends React.Component{
             </table>
         </div>
         </section>
-        {/* {article.map(data=> <div>{data.section_header1}</div>)}
-        {article.map(data=> <div>{data.section1}</div>)} */}
-        {article.map(data=> <div>{data.section_header2}</div>)}
-        {article.map(data=> <div>{data.section2}</div>)}
-        {article.map(data=> <div>{data.section_header3}</div>)}
-        {article.map(data=> <div>{data.section3}</div>)}
-        {article.map(data=> <div>{data.section_header4}</div>)}
-        {article.map(data=> <div>{data.section4}</div>)}
-        {article.map(data=> <div>{data.section_header5}</div>)}
-        {article.map(data=> <div>{data.section5}</div>)}
-        {article.map(data=> <div>{data.section_header6}</div>)}
-        {article.map(data=> <div>{data.section6}</div>)}
-        {article.map(data=> <div><a id="lawsuits">{data.section_header7}</a></div>)}
-        {article.map(data=> <div>{data.section7}</div>)}
-        {article.map(data=> <div>{data.section_header8}</div>)}
-        {article.map(data=> <div>{data.section8}</div>)}
-        {article.map(data=> <div>{data.section_header9}</div>)}
-        {article.map(data=> <div>{data.section9}</div>)} 
         </article>
 
 
