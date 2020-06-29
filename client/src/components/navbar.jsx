@@ -21,28 +21,34 @@ function Navbar() {
 <React.Fragment>
 
       <head>
-
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
       </head>
 
       <header>
       <section className="headerContainer">
-      <img src="" class="heroLogo" alt="wiki logo" />
+      <div className="wiki-logo"></div>
       <nav className="navbar">
    <ul className="nav-links">
      <li>
        <Link to="/">Home</Link>
      </li>
      <li>
-       <Link to="/sephora">Sephora</Link>
+       <Link to="/sephora">(sep)</Link>
      </li>
 
+     {/* <li>
+       <Link to="/donate">Donate</Link>
+     </li> */}
+     
      <li>
        <Link to="/contact">Contact</Link>
      </li>
 
      <li>
-       <Link to="/verification">Verify</Link>
+       <Link to="/verification">(verify)</Link>
      </li>
+
+     
    </ul>
  </nav>
 
@@ -60,6 +66,9 @@ function Navbar() {
    <Route exact path="/">
      <Home />
    </Route>
+   {/* <Route exact path="/donate">
+     <Donate />
+   </Route> */}
    <Route exact path="/contact">
      <Contact />
    </Route>
