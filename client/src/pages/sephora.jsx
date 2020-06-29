@@ -55,6 +55,8 @@ class Sephora extends React.Component{
             </div>                
             <div className="sephora-info">
                 <h3>OVERVIEW</h3>
+                <div className="check-container"><i class="far fa-check-circle fa-lg"></i></div>
+                <div className="edit-text">[ edit ]</div>
                 <p>Sephora is a French multinational chain of personal care and beauty stores. Featuring nearly 3,000 brands,
                 along with its own private label, Sephora offers beauty products including cosmetics, skincare, body, fragrance, 
                 nail color, beauty tools, and haircare.</p>
@@ -63,10 +65,12 @@ class Sephora extends React.Component{
             </div>
         </section>
 
+        <div className="vline"></div>
 
         <section className="feat-text-card">
 
-        <h3 className="sephora-heroText">SEPHORA</h3>
+        {/* <h3 className="sephora-heroText">SEPHORA</h3> */}
+        <div className="slogo-containertwo"></div>
         <div className="feat-text-container">
             <table className="feat-text-desc">
                 <tbody>
