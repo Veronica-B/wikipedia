@@ -101,12 +101,12 @@
 
   }
 .initial_container{
-  align-items: center;
+  
   padding-left: 20px;
 }
   
   iframe{
-    width: 300px;
+    width: 200px;
     height: 350px;
   }
 }
