@@ -1,13 +1,14 @@
 import React from 'react';
 // import logo from './public/assets/Sephora_logo.png';
 
-
+let count =1;
 
 class Sephora extends React.Component{
     constructor(props){
         super(props)
         this.state = {
           article: [],
+          i:[],
           error : false
         }
       }
@@ -23,16 +24,19 @@ class Sephora extends React.Component{
           }
         )
     }
+    handleSelect = (event) =>{
+        this.setState({i: event.target.value})
+        count= event.target.value
+        // console.log(event.target.value)
+    };
 
 
     render()
-    {
+    {  
         const {article} = this.state;
-        const articleArray= Object.entries(article);
     return (
-        
-    <React.Fragment>
 
+    <React.Fragment>
         <main>
         <article className="grid-container">
 
@@ -43,30 +47,33 @@ class Sephora extends React.Component{
             <div className="jump-to-sec"> 
             
                 <label for="subject">JUMP TO:</label>
-                    <select id="subject" name="subject" class="jumpTo-btn" onchange= "">
+                    <select id="subject" name="subject" class="jumpTo-btn" value="i" onChange= {this.handleSelect} >
                         <option value="selectSection">Select section..</option>
-                        <option value="overview">Overview</option>
-                        <option value="history"> History</option>
-                        <option value="operations">Operations</option>
-                        <option value="applications">Applications</option>
-                        <option value="acquisitions">Acquisitions</option>
-                        <option value="controversies">Controversies</option>
-                        <option href="#lawsuits" value="lawsuits">Lawsuits</option>
-                        <option value="environmentalRecord">Environmental Record</option>
-                        <option value="awardsHonors">Awards & Honors</option>
+                        <option value="1">Overview</option>
+                        <option value="2"> History</option>
+                        <option value="3">Operations</option>
+                        <option value="4">Applications</option>
+                        <option value="5">Acquisitions</option>
+                        <option value="6">Controversies</option>
+                        <option value="7">Lawsuits</option>
+                        <option value="8">Environmental Record</option>
+                        <option value="9">Awards & Honors</option>
                     </select>
             </div>                
-            <div className="sephora-info">
-            {/* {article.map(data=> <div>{Object.values(data)}</div>)} */} 
-    <h3>{Object.values(articleArray.section1)}</h3>
-                <div className="check-container"><i class="far fa-check-circle fa-lg"></i></div>
-                <div className="edit-text">[ edit ]</div>
-                <p>Sephora is a French multinational chain of personal care and beauty stores. Featuring nearly 3,000 brands,
-                along with its own private label, Sephora offers beauty products including cosmetics, skincare, body, fragrance, 
-                nail color, beauty tools, and haircare.</p>
-                <p>The company was founded in Limoges in 1970 and is currently based in Paris. Sephora is owned by luxury conglomerate
-                 LVMH as of 1997. The name comes from the Greek spelling of Zipporah (Greek: Σεπφώρα, Sepphōra), wife of Moses.</p>
-            </div>
+           
+            {article.map((data, index) => {
+                let section_headers= `data.section_header`.concat([count])
+                let sections= `data.section`.concat([count])
+                return(
+                    <div className="sephora-info">
+                         <h3>{Object.values(eval(section_headers))}</h3>
+                        <div className="check-container"><i class="far fa-check-circle fa-lg"></i></div>
+                                <div className="edit-text"> [ edit ]</div>
+                                    <p>{Object.values(eval(sections))}</p>
+                    </div>
+                )}
+            )}
+
         </section>
 
         <div className="vline"></div>
