@@ -23,6 +23,8 @@ class Sephora extends React.Component{
           }
         )
     }
+
+
     render()
     {
         const {article} = this.state;
@@ -40,7 +42,7 @@ class Sephora extends React.Component{
             <div className="jump-to-sec"> 
             
                 <label for="subject">JUMP TO:</label>
-                    <select id="subject" name="subject" class="jumpTo-btn">
+                    <select id="subject" name="subject" class="jumpTo-btn" onchange= "">
                         <option value="selectSection">Select section..</option>
                         <option value="overview">Overview</option>
                         <option value="history"> History</option>
@@ -48,7 +50,7 @@ class Sephora extends React.Component{
                         <option value="applications">Applications</option>
                         <option value="acquisitions">Acquisitions</option>
                         <option value="controversies">Controversies</option>
-                        <option value="lawsuits">Lawsuits</option>
+                        <option href="#lawsuits" value="lawsuits">Lawsuits</option>
                         <option value="environmentalRecord">Environmental Record</option>
                         <option value="awardsHonors">Awards & Honors</option>
                     </select>

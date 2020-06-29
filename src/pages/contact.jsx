@@ -14,20 +14,7 @@ class Contact extends React.Component {
             error : false
           }
         }
-            componentDidMount(){
-              fetch('http://localhost:8080/api/contact')
-              .then((res)=> res.json())
-              .then(
-                (data) => {
-                  this.setState({
-                    contact: data
-                  })
-                }
-              )
-            }
             render(){
-              // const {contact} = this.state;
-              // console.log(contact);
           return (
             <div className="App">
 

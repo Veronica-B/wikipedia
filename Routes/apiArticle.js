@@ -49,58 +49,51 @@ router.get('/article/:article_id',(req, res)=>{
     });
 });
 
-// router.get('/article/:article_name',(req, res)=>{
-//     connection.query(`${selectAll} WHERE article_name = ${req.params.article_name}`, (err, result) => {
-
-//             if(err) throw err;
-//             console.log(result);
-//             res.send(result)
-            
-//     });
-// });
 
 //adds a database entry
-router.post('/article', (req, res) => {
-    console.log('initially working')
-    console.log(req.body)
+// router.post('/article', (req, res) => {
+//     console.log('initially working')
+//     console.log(req.body)
 
-        // id:  ++ 1,
-        const article_name= req.body.article_name;
-        const section_header =req.body.section_header;
-        const section =req.body.section;
+//         // id:  ++ 1,
+//         const article_name= req.body.article_name;
+//         const section_header1 =req.body.section_header1;
+//         const section1 =req.body.section1;
+//         const section_header2 =req.body.section_header2;
+//         const section2 =req.body.section2;
+//         const section_header3 =req.body.section_header3;
+//         const section3 =req.body.section3;
+//         const section_header4 =req.body.section_header4;
+//         const section4 =req.body.section4;
+//         const section_header5 =req.body.section_header5;
+//         const section5 =req.body.section5;
+//         const section_header6 =req.body.section_header6;
+//         const section6 =req.body.section6;
+//         const section_header7 =req.body.section_header7;
+//         const section7 =req.body.section7;
+//         const section_header8 =req.body.section_header8;
+//         const section8 =req.body.section8;
+//         const section_header9 =req.body.section_header9;
+//         const section9 =req.body.section9;
 
-        const insertInto=  `INSERT INTO User_changes(article_name, section_header, section)
-            VALUES( ?, ?, ?)`;
+//         const insertInto=  `INSERT INTO article(article_name, section_header1, section1, section_header2, section2,
+//             section_header3, section3,section_header4, section4, section_header5, section5,section_header6, section6,
+//             section_header7, section7, section_header8, section8, section_header9, section9)
+//             VALUES( ?, ?, ? , ? , ? , ?, ? , ? , ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`;
         
-connection.query(insertInto, [ article_name, section_header, section], (err, data, fields)=> {
-          if(err) throw err;
-          console.log(`it works heres a name: ${article_name} `)
-          res.end();
-})
-});
-
-//updates database entry
-router.put('/article/:user_id',(req, res)=>{
-  
-    const article_name= req.body.article_name;
-    const section_header =req.body.section_header;
-    const section =req.body.section;
-
-    connection.query('UPDATE User_changes SET `article_name` = ? , `section_header` = ?, `section`= ? WHERE `user_id` = ' + req.params.user_id ,
-    [ article_name, section_header, section], (err, result) => {
-        
-            if(err) throw err;
-
-            console.log(result);
-
-            res.send(req.body);       
-    });
-});
+// connection.query(insertInto, [ article_name, section_header1, section1, section_header2, section2,
+//     section_header3, section3,section_header4, section4, section_header5, section5,section_header6, section6,
+//     section_header7, section7, section_header8, section8, section_header9, section9], (err, data, fields)=> {
+//           if(err) throw err;
+//           console.log(`it works heres a name: ${article_name} `)
+//           res.end();
+// })
+// });
 
 
 //deletes a single database entry
-router.delete('/article/:user_id',(req, res)=>{
-    connection.query(`DELETE FROM User_changes WHERE user_id = ${req.params.user_id}`, (err, result) => {
+router.delete('/article/:article_id',(req, res)=>{
+    connection.query(`DELETE FROM article WHERE article_id = ${req.params.article_id}`, (err, result) => {
             if(err) throw err;
             console.log(result);
             res.send(result)    
