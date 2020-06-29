@@ -253,10 +253,11 @@ line-height: 22px;
 
 .ver-container {
   margin: 200px 0 150px 225px;
-  width: 1000px;
-  height: 700px;
+  width: 1020px;
+  height: 725px;
   background-color: #A5A58D;
   border-radius: 10px;
+ 
 
 }
 
@@ -296,18 +297,38 @@ button{
   float: right;
   margin: 20px;
   font-family: Helvetica,Arial,sans-serif;
+  border-radius: 9px;
 }
+button 
+button:hover, 
+button:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(#fff,0);
+}
+
+
+
+
 .publishhhhh{
 color: #F0EFEB;
 background: blue;
 }
 .cancel{
-  color: red;
+ color: red;
   border:none;
   background-color: #A5A58D;
   
 }
-
+.txtcontain{
+  border-radius: 10px;
+  padding: 20px;
+  font-family: Helvetica,Arial,sans-serif;
+  letter-spacing: 1px;
+  
+}
+input{
+  border-radius: 10px;
+}
 
 
 /*=======================

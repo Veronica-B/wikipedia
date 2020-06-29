@@ -15,7 +15,7 @@ function Verification() {
                    
                     <div className="textaera_info">
                     <h3>SECTION BODY:</h3>
-                <textarea cols="110" rows="20">
+                <textarea className="txtcontain"cols="100" rows="20">
                 Sephora is a French multinational chain of personal care and beauty stores. Featuring nearly 3,000 brands,
                 along with its own private label, Sephora offers beauty products including cosmetics, skincare, body, fragrance, 
                 nail color, beauty tools, and haircare. The company was founded in Limoges in 1970 and is currently based in Paris. Sephora is owned by luxury conglomerate
