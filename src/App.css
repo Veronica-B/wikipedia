@@ -10,7 +10,21 @@
     box-sizing: border-box;
     
   }
+/**** Contact page ****/
+.container h1{
+  font-size:30px;
+}
+.drop-down-arrow{
+  padding-left: 191px ; 
+}
+.contact-info-style p {
+  font-size: 15px;;
 
+}
+.contact-form{
+  padding-right: 0px ; 
+  padding-left: 33px ;
+}
 
 }
 
@@ -28,6 +42,21 @@
     box-sizing: border-box;
     
   }
+  /****** Contact Page ******/
+
+  .drop-down-arrow{
+    padding-left: 374px ; 
+}
+.contact-form{
+        padding-right: 0px ; 
+        padding-left: 150px ;
+}
+.contact-form-text{
+    width: 80%;
+}
+.contact-form-btn{
+    float:none ; 
+}
 
 }
 
@@ -58,7 +87,7 @@
   top: 0;
   right: 0;
   left: 0;
-  z-index: 2;
+  z-index: 10;
 }
 
 .wiki-logo {
