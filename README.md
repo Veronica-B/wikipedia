@@ -5,26 +5,19 @@
 1. Clone or download this repository onto your local machine
 2. Install the node packages in the wiki folder. <br />
  a. You can do this by running **`npm i`** on your command line tool.
-3. Cd into the client folder.
-4. Install the node packages in the client folder.
  
 ## Running the App 
 
 ### To start the react-app, 
-1. Cd into the client folder
+1. Cd into the wiki folder
 2. On the command line type **`npm start`**
 
 ### To start the express server,
-1. Cd into the wiki folder
-2. On the command line type **`node server`**
+1. Open new terminal tab
+2. Cd into the wiki folder
+3. On the command line type **`node server`**
 
 ## Stopping the App 
-
-### To stop the react-app, 
-1. Cd into the client folder
-2. On the command line  hit "control" and "c" at the same time
-
-The app should be closed after step 2.
 
 ### To stop the express server,
 1. Cd into the wiki folder
@@ -41,7 +34,7 @@ The server should be closed after step 2.
 - Express
 - bodyparser
 - dotenv
--cors
+- cors
 - axios
 - mysql
 - nodemon
