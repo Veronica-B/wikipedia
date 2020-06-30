@@ -6,7 +6,7 @@ The wikipedia website is a redesign and a  vision of the original. It has been t
 
 1. Clone or download this repository onto your local machine
 2. Install the node packages in the wiki folder. <br />
- a. You can do this by running **`npm i`** on your command line tool.
+ a. You can do this by running **`npm i`** on your terminal.
  
 ## Running the App 
 
