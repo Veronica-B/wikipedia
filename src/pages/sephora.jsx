@@ -37,7 +37,7 @@ class Sephora extends React.Component{
 
     <React.Fragment>
         <main>
-        <article className="grid-container">
+        <article className="sep-grid-container">
 
         <section className="info-text-card">
             <div className="slogo-container"></div>
@@ -72,7 +72,7 @@ class Sephora extends React.Component{
 
         </section>
 
-        <div className="vline"></div>
+        <div className="line"></div>
 
         <section className="feat-text-card">
 
