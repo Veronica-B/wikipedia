@@ -14,7 +14,7 @@ function Footer() {
               <li>Mission</li>
               <li>Wikipedia</li>
               <li>Wikibooks</li>
-              <li>Wikiversityh</li>
+              <li>Wikiversity</li>
             </ul>
           </div>
           <div className="col">
