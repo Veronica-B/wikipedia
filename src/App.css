@@ -96,9 +96,57 @@
   padding-left: 33px ;
 }
 
+
+
+
+/*Verify*/
+
+
+.ver-container {
+  margin: 200px 0px 100px 0px;
+   width: 100vw;
+   height: 1150px;
+   overflow: hidden;
+ }
+
+
+.ver-slogo-container {
+
+  margin: 20px ;
+    background-size: 150px 100px;
+    width: 150px;
+    height: 100px;
+    padding-top: 75px;
+  }
+
+
+.disclaimer {
+  display: none;
+  height: 50px;
+  width: 650px;
 }
 
 
+button{
+  float:none;
+  width:75vw;
+  display: block;
+  margin-top: none;
+  margin-left: 0px;
+ 
+}
+
+.ver-text-field {
+  line-height: 30px;
+  width: 75vw;
+  display: block;
+}
+
+.txtcontain{
+  max-width: 75vw;
+  display: block;
+}
+}
 /*=======================
 ================== TABLET DEVICES =================
 ===================*/
