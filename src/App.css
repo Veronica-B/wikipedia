@@ -14,7 +14,7 @@
   .headerContainer {
     background: #3D405B;
     width: 100vw;
-    height: 545px;
+    height: 290px;
     font-family: inherit;
     z-index: 10;
     line-height: 0.5px;
@@ -22,10 +22,10 @@
   
   .wiki-logo {
     background: url("../src/assets/wiki-logo.png") no-repeat center;
-    background-size: 250px 250px;
-    width: 250px;
-    height: 200px;
-    margin-left: 30px;
+    background-size: 150px 150px;
+    width: 150px;
+    height: 100px;
+    margin-left: 85px;
   }
   
   
@@ -37,7 +37,7 @@
   .nav-links li{
     list-style:none;
     display: block;
-    line-height: 50px;
+    line-height: 30px;
     
   }
   
@@ -46,8 +46,8 @@
     font-weight:bold;
     letter-spacing:2px;
     text-decoration: none;
-    padding: 8px;
-    font-size: 40px;
+    padding: 5px;
+    font-size: 20px;
     }
   
   .nav-links li a:hover {
@@ -57,13 +57,13 @@
   
   .search-bar {
     position: relative;
-    top: 30px;
-    left: 25px;
+    top: 20px;
+    left: 50px;
     font-size: 18px;
     line-height: 20px;
-    height: 50px;
+    height: 30px;
     padding: 0.5rem;
-    width: 275px;
+    width: 225px;
   }
   
   
@@ -83,9 +83,9 @@ body {
 
 .sep-grid-container {
   display: grid;
-  grid-template-rows: 680px 100px 500px;
-  max-width: 80%;
-  margin: 600px 0 100px 25px;
+  grid-template-rows: 750px 100px 500px;
+  max-width: 320px;
+  margin: 0 0 50px 0;
 }
 
 
@@ -93,11 +93,9 @@ body {
 
 
 .feat-text-card {
-  margin-left: 100px;
   background-color: #A5A58D;
-  border-radius: 10px;
   order: 1;
-  width: 400px;
+  max-width: 320px;
 }
 
 .sephora-heroText {
@@ -106,12 +104,15 @@ body {
 
 .slogo-containertwo {
   background: url("../src/assets/Sephora_logo.png") no-repeat center;
-  background-size: 200px 25px;
-  width: 400px;
+  background-size: 250px 50px;
+  width: 250px;
   height: 50px;
+  margin-left: 35px;
+  margin-top: 50px;
 }
 
 .feat-text-desc {
+  margin-top: 25px;
   max-width: 550px;
 }
 
@@ -123,28 +124,27 @@ td {
 
 
 .line {
-  width: 550px;
+  max-width: 250px;
   border-top: 1px solid black;
-  margin-top: 100px;
-  margin-left: 25px;
+  margin-top: 75px;
+  margin-left: 30px;
   order: 2;
 }
 
 /*=========== LEFT SIDE ==========*/
 
-.slogo-container {
+/* .slogo-container {
   background: url("../src/assets/Sephora_logo.png") no-repeat center;
-  background-size: 450px 100px;
-  width: 450px;
+  background-size: 320px 100px;
+  width: 320px;
   height: 100px;
   margin-bottom: 75px;
-  margin-left: 70px;
-}
+} */
 
 .info-text-card {
  margin-top: 75px;
  order: 3;
- width: 500px;
+ max-width: 320px;
 }
 
 .sephora-info {
@@ -167,7 +167,7 @@ line-height: 22px;
 .edit-text {
   position: relative;
   bottom: -95px;
-  left: 550px;
+  left: 250px;
   font-size: 17px;
   text-decoration: none;
   color: black;
@@ -186,7 +186,7 @@ line-height: 22px;
   text-align: center;
   font-size: 20px;
   font-family: 'Amiri', serif;
-  width: 600px;
+  width: 320px;
 }
 
 .jumpTo-btn {
@@ -194,7 +194,7 @@ line-height: 22px;
   font-size: 15px;
   margin-left: 10px;
   padding: 10px;
-  width: 30%;
+  width: 80%;
 }
 
 
@@ -214,9 +214,6 @@ line-height: 22px;
   padding-left: 33px ;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 
 /*===========FOOTER ========
 ===================*/
@@ -231,7 +228,6 @@ line-height: 22px;
       color: #cb997e;
   }
 
->>>>>>> bb90a262a8d728c2109784d37f75ef12f62cddb3
 /* Home Page */
 
 #input-search{
@@ -822,10 +818,6 @@ line-height: 22px;
 ===================*/
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> bb90a262a8d728c2109784d37f75ef12f62cddb3
 .ver-container {
   margin: 200px 0 150px 225px;
   width: 1020px;
