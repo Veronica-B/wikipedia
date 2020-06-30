@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import '../css/verify.css';
 
 
 
@@ -20,13 +20,9 @@ function Verification() {
                             the CC BY-SA 3.0 License and the GFDL.</p>
                             </div>
                         <form method="POST" action="/api/verification" >
-<<<<<<< HEAD
-                        <h3>ARTICLE NAME:</h3>
+                        <h3>Article Name:</h3>
                         <input type="text" placeholder="Sephora" class="ver-text-field" name="article_name"/>
-                        <h3>SECTION HEADER:</h3>
-=======
                         <h3>Section Header:</h3>
->>>>>>> 36d7e3ee76ac89fc3ef8e27eb4bdc022dea5b767
                         <input type="text" placeholder="Overview" class="ver-text-field" name="section_header"/>
 
                         <div className="textarea_info">
@@ -40,6 +36,8 @@ function Verification() {
                             <button className="publishhhhh" >PUBLISH</button>
                         </div>
                         </form>
+                        <button className="showpreview_btn">SHOW PREVIEW </button>
+                        <button className="cancel" >CANCEL</button>
                         <div className="bottom disclaimer">
                             <h3>Disclaimer:</h3>
                             <p>Content that violates any copyrights will be deleted. 
@@ -48,14 +46,8 @@ function Verification() {
                             you agree to the Terms of Use, and you irrevocably agree to release your contribution under 
                             the CC BY-SA 3.0 License and the GFDL.</p>
                             </div>
-                        <button className="showpreview_btn">SHOW PREVIEW </button>
-                        <button className="cancel" >CANCEL</button>
                     </div>
                 </section>
-
-
-
-
 
 
         </React.Fragment>
