@@ -10,21 +10,7 @@
     box-sizing: border-box;
     
   }
-/**** Contact page ****/
-.container h1{
-  font-size:30px;
-}
-.drop-down-arrow{
-  padding-left: 191px ; 
-}
-.contact-info-style p {
-  font-size: 15px;;
 
-}
-.contact-form{
-  padding-right: 0px ; 
-  padding-left: 33px ;
-}
 
 }
 
@@ -42,21 +28,6 @@
     box-sizing: border-box;
     
   }
-  /****** Contact Page ******/
-
-  .drop-down-arrow{
-    padding-left: 374px ; 
-}
-.contact-form{
-        padding-right: 0px ; 
-        padding-left: 150px ;
-}
-.contact-form-text{
-    width: 80%;
-}
-.contact-form-btn{
-    float:none ; 
-}
 
 }
 
@@ -87,7 +58,7 @@
   top: 0;
   right: 0;
   left: 0;
-  z-index: 10;
+  z-index: 2;
 }
 
 .wiki-logo {
@@ -217,7 +188,7 @@ line-height: 22px;
   color: green;
   position: relative;
   bottom: 46px;
-  right: 40px;
+  left: 140px;
 }
 
 .edit-text {
@@ -253,11 +224,10 @@ line-height: 22px;
 
 .ver-container {
   margin: 200px 0 150px 225px;
-  width: 1020px;
-  height: 725px;
+  width: 1000px;
+  height: 700px;
   background-color: #A5A58D;
   border-radius: 10px;
- 
 
 }
 
@@ -290,45 +260,12 @@ line-height: 22px;
   margin-bottom: 15px;
 }
 
-button{
-  letter-spacing: 3px;
-  font-weight: bolder;
-  padding: 10px 20px 10px 20px;
-  float: right;
-  margin: 20px;
-  font-family: Helvetica,Arial,sans-serif;
-  border-radius: 9px;
-}
-button 
-button:hover, 
-button:focus {
-  animation: pulse 1s;
-  box-shadow: 0 0 0 2em rgba(#fff,0);
+.section-bdy-field {
+height: 300px;
 }
 
 
 
-
-.publishhhhh{
-color: #F0EFEB;
-background: blue;
-}
-.cancel{
- color: red;
-  border:none;
-  background-color: #A5A58D;
-  
-}
-.txtcontain{
-  border-radius: 10px;
-  padding: 20px;
-  font-family: Helvetica,Arial,sans-serif;
-  letter-spacing: 1px;
-  
-}
-input{
-  border-radius: 10px;
-}
 
 
 /*=======================
