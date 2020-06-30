@@ -20,7 +20,7 @@
     font-size: 12px;
     line-height: 17px;
     padding: 20px 0px 5px 0px;
-    color:black;
+    color: #A5A58D;
     font-weight:bolder;
     text-transform: uppercase;
     letter-spacing: 0.250em;
@@ -31,7 +31,7 @@
     padding: 0;
   }
   .footer .col ul li {
-    color: white;
+    color: #F0EFEB;
     font-size: 14px;
     font-family: inherit;
     font-weight: bold;
@@ -47,7 +47,7 @@
   }
   
   .footer .col ul li:hover {
-    color: #ffffff;
+    color: #cb997e;
     transition: .1s;
     -webkit-transition: .1s;
     -moz-transition: .1s;

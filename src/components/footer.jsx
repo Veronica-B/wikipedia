@@ -58,13 +58,10 @@ function Footer() {
           <div className="col social">
             <h1>Social</h1>
             <ul>
-
-
-              <a href="https://twitter.com/explore" className="fa fa-twitter"></a>
-              <a href="https://www.instagram.com/" className="fa fa-instagram"></a>
-              <a href="" className="fa fa-wikipedia-w" aria-hidden="true"></a>
-              <a href="https://mtouch.facebook.com/reg/?ref=dblsoft=hjk" className="fa fa-facebook-official" aria-hidden="true"></a>
-
+            <li><a href="https://www.facebook.com/" aria-label="Facebook"><i className="fab fa-facebook fa-2x"></i></a></li>
+            <li><a href="https://www.twitter.com/" aria-label="Twitter"><i className="fab fa-twitter fa-2x"></i></a></li>
+            <li><a href="https://www.instagram.com/" aria-label="Instagram"><i className="fab fa-instagram fa-2x"></i></a></li>
+            <li><a href="https://www.wikipedia.org/" aria-label="Instagram"><i class="fab fa-wikipedia-w fa-2x"></i></a></li>
             </ul>
           </div>
           <div className="clearfix"></div>

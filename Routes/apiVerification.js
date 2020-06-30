@@ -13,6 +13,7 @@ router.use(bodyParser.urlencoded({extended: false}))
 const selectAll= 'SELECT * FROM User_changes ';
 
 
+
 //creates connection to mysql
 const connection = mysql.createConnection({
     host: process.env.MYSQL_HOST,
