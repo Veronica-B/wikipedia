@@ -13,13 +13,9 @@
 
   .headerContainer {
     background: #3D405B;
-    max-width: 100%;
+    width: 100vw;
     height: 545px;
     font-family: inherit;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
     z-index: 10;
     line-height: 0.5px;
   }
@@ -29,14 +25,13 @@
     background-size: 250px 250px;
     width: 250px;
     height: 200px;
-    margin-left: 215px;
+    margin-left: 30px;
   }
   
   
   .navbar{
     display: flex;
     justify-content: center;
-    max-width: 100%;
   }
   
   .nav-links li{
@@ -63,7 +58,7 @@
   .search-bar {
     position: relative;
     top: 30px;
-    left: 210px;
+    left: 25px;
     font-size: 18px;
     line-height: 20px;
     height: 50px;
@@ -227,17 +222,13 @@ line-height: 22px;
 .fab {
   width: 50px;
   text-decoration: none;
-  color:#F0EFEB;
-  }
+  color: #F0EFEB;
+}
   
   .fab:hover {
       color: #cb997e;
   }
 
-
-
-=======
-<<<<<<< HEAD
 /* Home Page */
 
 #input-search{
@@ -293,8 +284,6 @@ iframe{
   display: none;
   height: 50px;
   width: 650px;
->>>>>>> 9c972e8a22bf40553894ca687ce83e241728f13a
->>>>>>> a08cc69b17af7565e73e36313180330a281de516
 }
 
 
@@ -717,7 +706,7 @@ body {
 }
 
 
-.grid-container {
+.sep-grid-container {
   display: grid;
   grid-template-columns: 650px 125px 500px;
   padding: 5px;
@@ -831,29 +820,27 @@ line-height: 22px;
 ===================*/
 
 
-<<<<<<< HEAD
+
 .ver-container {
   margin: 200px 0 150px 225px;
   width: 1020px;
-  height: 800px;
+  height: 1080px;
   background-color: #A5A58D;
   border-radius: 10px;
- 
-
 }
 
 .editVer-section {
   width: 1000px;
-  height: 450px;
+  height: 1080px;
   padding-left: 50px;
 }
 
 .ver-slogo-container {
   background: url("../src/assets/Sephora_logo.png") no-repeat center;
-  background-size: 350px 50px;
-  width: 350px;
+  background-size: 450px 100px;
+  width: 450px;
   height: 150px;
-  margin: 0 0 0 550px;
+  margin: 0 0 0 275px;
   padding-top: 75px;
 }
 
@@ -927,8 +914,6 @@ input{
   border-radius: 10px;
 }
 
-=======
->>>>>>> 9c972e8a22bf40553894ca687ce83e241728f13a
 
 /*=======================
 ================== CONTACT PAGE =================
