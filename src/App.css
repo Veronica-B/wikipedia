@@ -219,7 +219,6 @@ line-height: 22px;
   padding-left: 33px ;
 }
 
-<<<<<<< HEAD
 
 /*===========FOOTER ========
 ===================*/
@@ -236,8 +235,7 @@ line-height: 22px;
 
 
 
-=======
-<<<<<<< HEAD
+
 /* Home Page */
 
 #input-search{
@@ -264,7 +262,6 @@ iframe{
   
 }
 
-=======
 
 
 
@@ -290,11 +287,8 @@ iframe{
 
 
 .disclaimer {
-  display: none;
   height: 50px;
   width: 650px;
->>>>>>> 9c972e8a22bf40553894ca687ce83e241728f13a
->>>>>>> a08cc69b17af7565e73e36313180330a281de516
 }
 
 
@@ -830,76 +824,6 @@ line-height: 22px;
 ================== VERIFICATION PAGE =================
 ===================*/
 
-
-<<<<<<< HEAD
-.ver-container {
-  margin: 200px 0 150px 225px;
-  width: 1020px;
-  height: 800px;
-  background-color: #A5A58D;
-  border-radius: 10px;
- 
-
-}
-
-.editVer-section {
-  width: 1000px;
-  height: 450px;
-  padding-left: 50px;
-}
-
-.ver-slogo-container {
-  background: url("../src/assets/Sephora_logo.png") no-repeat center;
-  background-size: 350px 50px;
-  width: 350px;
-  height: 150px;
-  margin: 0 0 0 550px;
-  padding-top: 75px;
-}
-
-.editVer-section h3 {
-  line-height: 45px;
-  max-width: 450px;
-  font-size: 20px;
-  font-family: inherit;
-}
-
-.ver-text-field {
-  line-height: 30px;
-  font-size: 18px;
-  padding: 10px;
-  width: 900px;
-  margin-bottom: 15px;
-}
-
-.publishhhhh_btn {
-  letter-spacing: 3px;
-  font-weight: 40px;
-  padding: 10px 20px 10px 20px;
-  float: right;
-  margin: 10px;
-  font-family: Helvetica,Arial,sans-serif;
-  border-radius: 9px;
-}
-.showpreview_btn{
-  letter-spacing: 3px;
-  font-weight: 40px;
-  padding: 10px 20px 10px 20px;
-  float: right;
-  margin: 10px;
-  font-family: Helvetica,Arial,sans-serif;
-  border-radius: 9px;
-}
-button 
-button:hover, 
-button:focus {
-  animation: pulse 1s;
-  box-shadow: 0 0 0 2em rgba(#fff,0);
-}
-
-
-
-
 .publishhhhh_btn{
 color: #F0EFEB;
 background: #3d405b;
@@ -927,8 +851,6 @@ input{
   border-radius: 10px;
 }
 
-=======
->>>>>>> 9c972e8a22bf40553894ca687ce83e241728f13a
 
 /*=======================
 ================== CONTACT PAGE =================

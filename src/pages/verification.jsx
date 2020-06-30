@@ -37,10 +37,7 @@ function Verification() {
                         </div>
                         </form>
                         <button className="showpreview_btn">SHOW PREVIEW </button>
-<<<<<<< HEAD
                         <button className="cancel_btn" >CANCEL</button>
-=======
-                        <button className="cancel" >CANCEL</button>
                         <div className="bottom disclaimer">
                             <h3>Disclaimer:</h3>
                             <p>Content that violates any copyrights will be deleted. 
@@ -49,7 +46,6 @@ function Verification() {
                             you agree to the Terms of Use, and you irrevocably agree to release your contribution under 
                             the CC BY-SA 3.0 License and the GFDL.</p>
                             </div>
->>>>>>> 9c972e8a22bf40553894ca687ce83e241728f13a
                     </div>
                 </section>
 
