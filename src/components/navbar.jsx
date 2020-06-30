@@ -53,7 +53,7 @@ function Navbar() {
    </ul>
 
  </nav>
- <div className="search-bar-container"><input type="text" placeholder="Search Wikipedia.org" className="search-bar" /></div> 
+<input type="text" placeholder="Search Wikipedia.org" className="search-bar" />
 
       </section>
       </header>
