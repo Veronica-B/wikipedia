@@ -14,7 +14,7 @@
   .headerContainer {
     background: #3D405B;
     width: 100vw;
-    height: 545px;
+    height: 290px;
     font-family: inherit;
     z-index: 10;
     line-height: 0.5px;
@@ -22,10 +22,10 @@
   
   .wiki-logo {
     background: url("../src/assets/wiki-logo.png") no-repeat center;
-    background-size: 250px 250px;
-    width: 250px;
-    height: 200px;
-    margin-left: 30px;
+    background-size: 150px 150px;
+    width: 150px;
+    height: 100px;
+    margin-left: 85px;
   }
   
   
@@ -37,7 +37,7 @@
   .nav-links li{
     list-style:none;
     display: block;
-    line-height: 50px;
+    line-height: 30px;
     
   }
   
@@ -46,8 +46,8 @@
     font-weight:bold;
     letter-spacing:2px;
     text-decoration: none;
-    padding: 8px;
-    font-size: 40px;
+    padding: 5px;
+    font-size: 20px;
     }
   
   .nav-links li a:hover {
@@ -57,13 +57,13 @@
   
   .search-bar {
     position: relative;
-    top: 30px;
-    left: 25px;
+    top: 20px;
+    left: 50px;
     font-size: 18px;
     line-height: 20px;
-    height: 50px;
+    height: 30px;
     padding: 0.5rem;
-    width: 275px;
+    width: 225px;
   }
   
   
@@ -71,6 +71,101 @@
   ================== HOME PAGE =================
   ===================*/
   
+
+  .logo_firstname{
+    text-align: center;
+    font-family: inherit;
+    font-size: 39px;
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+    margin-top:20px;
+  }
+  .wikipedia_logo {
+    height: 250px;
+    width: 250px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+  .wk_name{
+    margin-bottom: 50px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Amiri', serif;
+  }
+  .history_container{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  
+  font-size: 22px;
+  background-color: #a5a58d;
+  margin-top: 50px;
+  }
+
+  .history_container p {
+  font-family: 'Amiri', serif;
+  }
+  .video_title{
+  margin-bottom: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .info_hist{
+  text-align: center;
+  /* margin: 0 75px 35px 45px; */
+  line-height: 30px;
+  /* margin-top: 40px; */
+  }
+  /* Search bar  */
+  .ui.input {
+    text-align: center;
+    /* margin: 4em auto; */
+    color: #000;
+    box-sizing: border-box;
+    position: relative;
+    /* right: 50px; */
+  }
+  .search {
+    width: 150px;
+    background: #fff;
+    color: #000;
+    box-shadow: 1px 1px 0px #8e8a8a;
+    font-size: 18px;
+    line-height: 22px;
+    height: 40px;
+    border: 2px solid #B0BABF;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  
+  #button-search{
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 80px;
+
+  }
+  #input-search:hover, #input-search .active {
+    border-color: #CB997E;
+    outline: none;
+  }
+  .ui.input > button:hover, button:active, button:focus {
+    outline: none;
+    color: #CB997E;
+  }
+  input {
+    width: 35%;
+  }
+  #input-search{
+    width: 250px;
+    margin-top: 30px;
+  }
+ 
+  iframe{
+    width: 320px;
+    height: 350px;
+  }
 
   /*=======================
 ================== MAIN CONTENT PAGE =================
@@ -83,9 +178,9 @@ body {
 
 .sep-grid-container {
   display: grid;
-  grid-template-rows: 680px 100px 500px;
-  max-width: 80%;
-  margin: 600px 0 100px 25px;
+  grid-template-rows: 750px 100px 500px;
+  max-width: 320px;
+  margin: 0 0 50px 0;
 }
 
 
@@ -93,11 +188,9 @@ body {
 
 
 .feat-text-card {
-  margin-left: 100px;
   background-color: #A5A58D;
-  border-radius: 10px;
   order: 1;
-  width: 400px;
+  max-width: 320px;
 }
 
 .sephora-heroText {
@@ -106,12 +199,15 @@ body {
 
 .slogo-containertwo {
   background: url("../src/assets/Sephora_logo.png") no-repeat center;
-  background-size: 200px 25px;
-  width: 400px;
+  background-size: 250px 50px;
+  width: 250px;
   height: 50px;
+  margin-left: 35px;
+  margin-top: 50px;
 }
 
 .feat-text-desc {
+  margin-top: 25px;
   max-width: 550px;
 }
 
@@ -123,28 +219,27 @@ td {
 
 
 .line {
-  width: 550px;
+  max-width: 250px;
   border-top: 1px solid black;
-  margin-top: 100px;
-  margin-left: 25px;
+  margin-top: 75px;
+  margin-left: 30px;
   order: 2;
 }
 
 /*=========== LEFT SIDE ==========*/
 
-.slogo-container {
+/* .slogo-container {
   background: url("../src/assets/Sephora_logo.png") no-repeat center;
-  background-size: 450px 100px;
-  width: 450px;
+  background-size: 320px 100px;
+  width: 320px;
   height: 100px;
   margin-bottom: 75px;
-  margin-left: 70px;
-}
+} */
 
 .info-text-card {
  margin-top: 75px;
  order: 3;
- width: 500px;
+ max-width: 320px;
 }
 
 .sephora-info {
@@ -167,7 +262,7 @@ line-height: 22px;
 .edit-text {
   position: relative;
   bottom: -95px;
-  left: 550px;
+  left: 250px;
   font-size: 17px;
   text-decoration: none;
   color: black;
@@ -186,7 +281,7 @@ line-height: 22px;
   text-align: center;
   font-size: 20px;
   font-family: 'Amiri', serif;
-  width: 600px;
+  width: 320px;
 }
 
 .jumpTo-btn {
@@ -194,74 +289,8 @@ line-height: 22px;
   font-size: 15px;
   margin-left: 10px;
   padding: 10px;
-  width: 30%;
+  width: 80%;
 }
-
-
-/**** Contact page ****/
-.container h1{
-  font-size:30px;
-}
-.drop-down-arrow{
-  padding-left: 191px ; 
-}
-.contact-info-style p {
-  font-size: 15px;;
-
-}
-.contact-form{
-  padding-right: 0px ; 
-  padding-left: 33px ;
-}
-
-
-
-/*===========FOOTER ========
-===================*/
-
-.fab {
-  width: 50px;
-  text-decoration: none;
-  color: #F0EFEB;
-}
-  
-  .fab:hover {
-      color: #cb997e;
-  }
-
-
-/* Home Page */
-
-#input-search{
-  width: 150px;
-  height: 50px;
-  padding-left: 10px;
-
-}
-
-.initial_container{
-height: 700px;
-align-items: center;
-
-
-}
-
-iframe{
-  width: 100px;
-  height: 350px;
-}
-.logo_firstname{
-  font-size: 5px;
-  font-weight: 800;
-
-}
-#input-search{
-  width: 150px;
-  
-}
-
-
-
 
 /*Verify*/
 
@@ -310,6 +339,44 @@ button{
   max-width: 75vw;
   display: block;
 }
+
+
+/**** Contact page ****/
+.container h1{
+  font-size:30px;
+}
+.drop-down-arrow{
+  padding-left: 191px ; 
+}
+.contact-info-style p {
+  font-size: 15px;;
+
+}
+.contact-form{
+  padding-right: 0px ; 
+  padding-left: 33px ;
+}
+
+
+/*===========FOOTER ========
+===================*/
+
+.fab {
+  width: 50px;
+  text-decoration: none;
+  color: #F0EFEB;
+}
+  
+  .fab:hover {
+      color: #cb997e;
+  }
+
+
+
+
+
+
+
 }
 /*=======================
 ================== TABLET DEVICES =================
@@ -325,7 +392,7 @@ button{
     
   }
 
-
+/*verification page*/
 .ver-container {
  margin: 200px 0px 100px 0px;
   width: 100vw;
@@ -618,7 +685,7 @@ line-height: 22px;
 ===================*/
 
 
-@media screen and (min-width: 1026px) {
+ @media screen and (min-width: 1026px) {
 
 * {
   margin:0px;
@@ -697,7 +764,102 @@ line-height: 22px;
 /*=======================
 ================== HOME PAGE =================
 ===================*/
+/*===========HOME ========
+===================*/
 
+.logo_firstname{
+  text-align: center;
+  font-family: inherit;
+  font-size: 100px;
+  margin-bottom: 20px;
+  letter-spacing: 15px;
+}
+
+.wikipedia_logo {
+  height: 250px;
+  width: 250px;
+  display: block;
+margin-left: auto;
+margin-right: auto;
+ 
+}
+.initial_container{
+  margin-top: 240px;
+
+}
+.wk_name{
+  margin-bottom: 50px;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Amiri', serif;
+}
+
+.history_container{
+display: flex;
+align-items: center;
+padding: 20px 0 50px 135px;
+font-size: 22px;
+background-color: #a5a58d;
+margin-top: 100px;
+}
+
+.history_container p {
+font-family: 'Amiri', serif;
+}
+
+.video_title{
+margin-bottom: 30px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.info_hist{
+text-align: center;
+margin: 0 75px 35px 45px;
+line-height: 30px;
+margin-top: 40px;
+}
+
+/* Search bar   */
+.ui.input {
+  text-align: center;
+  margin: 4em auto;
+  color: #000;
+  box-sizing: border-box;
+  position: relative;
+  right: 50px;
+}
+
+.search {
+  background: #fff;
+  color: #000;
+  box-shadow: 1px 1px 0px #8e8a8a;
+  font-size: 18px;
+  line-height: 22px;
+  height: 40px;
+  border: 2px solid #B0BABF;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+
+}
+#button-search{
+  border-radius: 10px;
+  
+}
+
+
+#input-search:hover, #input-search .active {
+  border-color: #CB997E;
+  outline: none;
+}
+
+.ui.input > button:hover, button:active, button:focus {
+  outline: none;
+  color: #CB997E;
+}
+
+input {
+  width: 35%;
+}
 
 
 
@@ -927,7 +1089,7 @@ input{
 
 /*===========FOOTER ========
 ===================*/
-
+ }
 .fab {
   width: 50px;
   text-decoration: none;
@@ -938,7 +1100,7 @@ input{
       color: #cb997e;
   }
 
-}
+
 .footer {
   width: 100%;
   position: relative;
@@ -1001,6 +1163,8 @@ input{
   padding: 20px 20px 10px 20px;
   color:white;
 }
+ 
+/*
 @media only screen and (min-width: 1280px) {
   .contain {
     width: 1200px;
@@ -1042,106 +1206,11 @@ input{
   .footer .col {
     width: 100%;
   }
-}
-/*===========HOME ========
-===================*/
+}*/
 
-.logo_firstname{
-  text-align: center;
-  font-family: inherit;
-  font-size: 100px;
-  margin-bottom: 20px;
-  letter-spacing: 15px;
-}
-
-.wikipedia_logo {
-  height: 250px;
-  width: 250px;
-  display: block;
-margin-left: auto;
-margin-right: auto;
- 
-}
-.initial_container{
-  margin-top: 240px;
-
-}
-.wk_name{
-  margin-bottom: 50px;
-  font-size: 30px;
-  text-align: center;
-  font-family: 'Amiri', serif;
-}
-
-.history_container{
-display: flex;
-align-items: center;
-padding: 20px 0 50px 135px;
-font-size: 22px;
-background-color: #a5a58d;
-margin-top: 100px;
-}
-
-.history_container p {
-font-family: 'Amiri', serif;
-}
-
-.video_title{
-margin-bottom: 30px;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.info_hist{
-text-align: center;
-margin: 0 75px 35px 45px;
-line-height: 30px;
-margin-top: 40px;
-}
-
-/* Search bar  */
-.ui.input {
-  text-align: center;
-  margin: 4em auto;
-  color: #000;
-  box-sizing: border-box;
-  position: relative;
-  right: 50px;
-}
-
-.search {
-  background: #fff;
-  color: #000;
-  box-shadow: 1px 1px 0px #8e8a8a;
-  font-size: 18px;
-  line-height: 22px;
-  height: 40px;
-  border: 2px solid #B0BABF;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-
-}
-#button-search{
-  border-radius: 10px;
-  
-}
-
-
-#input-search:hover, #input-search .active {
-  border-color: #CB997E;
-  outline: none;
-}
-
-.ui.input > button:hover, button:active, button:focus {
-  outline: none;
-  color: #CB997E;
-}
-
-input {
-  width: 35%;
-}
 /* responsive */
 
-@media screen and (max-width: 768px){
+/* @media screen and (max-width: 768px){
   #input-search{
     width: 250px;
   }
@@ -1156,4 +1225,4 @@ input {
     height: 350px;
   }
 }
-
+ */

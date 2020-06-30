@@ -94,7 +94,7 @@
   }
   /* responsive */
 
-  @media screen and (max-width: 768px){
+  /* @media screen and (max-width: 768px){
     #input-search{
       width: 250px;
     }
@@ -108,4 +108,4 @@
       width: 400px;
       height: 350px;
     }
-  }
+  } */
