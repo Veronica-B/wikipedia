@@ -15,7 +15,7 @@
    
 }
 .initial_container{
-    margin: 200px 0 0 0;
+    margin: 240px;
 
 }
 .wk_name{
@@ -72,8 +72,10 @@
     padding-right: 0.5em;
   
   }
-  
-
+  #button-search{
+    border-radius: 10px;
+    
+  }
   
   
   #input-search:hover, #input-search .active {
@@ -87,11 +89,10 @@
   }
   
   input {
-    
-    width: 30%;
+    width: 35%;
   }
   /* responsive */
-  /* MQ */
+
   @media screen and (max-width: 768px){
     #input-search{
       width: 250px;
@@ -107,24 +108,3 @@
       height: 350px;
     }
   }
-  /*=======================
-================== MOBILE DEVICES =================
-===================*/
-
-@media screen and (max-width: 650px) and (min-width: 300px) {
-  #input-search{
-    width: 250px;
-    height: 50px;
-    padding-left: 10px;
-
-  }
-.initial_container{
-  
-  padding-left: 20px;
-}
-  
-  iframe{
-    width: 200px;
-    height: 350px;
-  }
-}

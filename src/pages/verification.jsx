@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../src/App.css';
+import '../css/verify.css';
 
 
 
@@ -19,7 +19,9 @@ function Verification() {
                             you agree to the Terms of Use, and you irrevocably agree to release your contribution under 
                             the CC BY-SA 3.0 License and the GFDL.</p>
                             </div>
-                        <form method="POST" action="/api/verification" >
+                        <form method="POST" action="/api/verification">
+                        <h3>Article Name:</h3>
+                        <input type="text" placeholder="Sephora" class="ver-text-field" name="article_name"/>
                         <h3>Section Header:</h3>
                         <input type="text" placeholder="Overview" class="ver-text-field" name="section_header"/>
 
@@ -31,9 +33,14 @@ function Verification() {
                                 nail color, beauty tools, and haircare. The company was founded in Limoges in 1970 and is currently based in Paris. Sephora is owned by luxury conglomerate
                                 LVMH as of 1997. The name comes from the Greek spelling of Zipporah (Greek: Σεπφώρα, Sepphōra), wife of Moses.
                             </textarea>
-                            <button className="publishhhhh" >PUBLISH</button>
+                            <button className="publishhhhh_btn" >PUBLISH</button>
                         </div>
                         </form>
+                        <button className="showpreview_btn">SHOW PREVIEW </button>
+<<<<<<< HEAD
+                        <button className="cancel_btn" >CANCEL</button>
+=======
+                        <button className="cancel" >CANCEL</button>
                         <div className="bottom disclaimer">
                             <h3>Disclaimer:</h3>
                             <p>Content that violates any copyrights will be deleted. 
@@ -42,14 +49,9 @@ function Verification() {
                             you agree to the Terms of Use, and you irrevocably agree to release your contribution under 
                             the CC BY-SA 3.0 License and the GFDL.</p>
                             </div>
-                        <button className="showpreview_btn">SHOW PREVIEW </button>
-                        <button className="cancel" >CANCEL</button>
+>>>>>>> 9c972e8a22bf40553894ca687ce83e241728f13a
                     </div>
                 </section>
-
-
-
-
 
 
         </React.Fragment>

@@ -13,7 +13,7 @@ function Home() {
                     <img className="wikipedia_logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt="wiki-hero"/>
                     <div className="ui action input">
                     <form action="http://localhost:3000/sephora" target= "_blank" method="GET">
-                        <input type="text" placeholder="Search Wikipedia.org" class="search" id="input-search" />
+                        <input type="text" placeholder="Search Wikipedia.org" className="search" id="input-search" />
                         <button className="search ui button btn-wiki" id="button-search">Search</button>
                         </form>
                     </div>
