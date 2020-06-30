@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../src/App.css';
+import '../App.css';
 
 
 
@@ -13,6 +13,8 @@ function Verification() {
 
                         <div className="ver-slogo-container" ></div>
                         <form method="POST" action="/api/verification" >
+                        <h3>ARTICLE NAME:</h3>
+                        <input type="text" placeholder="Sephora" class="ver-text-field" name="article_name"/>
                         <h3>SECTION HEADER:</h3>
                         <input type="text" placeholder="Overview" class="ver-text-field" name="section_header"/>
 
