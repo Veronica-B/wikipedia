@@ -238,6 +238,8 @@ line-height: 22px;
   bottom: -95px;
   left: 650px;
   font-size: 17px;
+  text-decoration: none;
+  color: black;
 }
 
 .sephora-info p {
