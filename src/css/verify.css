@@ -41,7 +41,7 @@
   
   .disclaimer {
     height: 50px;
-    width: 400px;  
+    width: 390px;  
 }
   
   .disclaimer h3 {
@@ -73,7 +73,7 @@
     font-weight: bolder;
     padding: 10px 20px 10px 20px;
     float: right;
-    margin: 50px 10px 10px 10px;
+    margin: 0px 10px 10px 10px;
     font-family: Helvetica,Arial,sans-serif;
     border-radius: 9px;
   }

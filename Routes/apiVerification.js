@@ -67,6 +67,7 @@ router.post('/verification', (req, res) => {
 connection.query(insertInto, [ article_name, section_header, section], (err, data, fields)=> {
           if(err) throw err;
           console.log(`it works heres a name: ${article_name} `)
+          res.writeHead(301,{Location: 'http://localhost:3000/verification'});
           res.end();
 })
 });
