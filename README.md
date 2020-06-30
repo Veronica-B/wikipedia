@@ -1,5 +1,7 @@
 # Wikipedia
 
+The wikipedia website is a redesign and a  vision of the original. It has been tailored and upgraded according to user experiences. This app contains four pages: home page , sephora page , verification page , and the contact page.
+
 ## Getting Started
 
 1. Clone or download this repository onto your local machine
