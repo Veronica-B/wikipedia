@@ -214,9 +214,7 @@ line-height: 22px;
   padding-left: 33px ;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
 
 /*===========FOOTER ========
 ===================*/
@@ -231,30 +229,34 @@ line-height: 22px;
       color: #cb997e;
   }
 
->>>>>>> bb90a262a8d728c2109784d37f75ef12f62cddb3
+
 /* Home Page */
 
 #input-search{
-  width: 250px;
+  width: 150px;
   height: 50px;
   padding-left: 10px;
 
 }
 
 .initial_container{
-padding-left: 20px;
+height: 700px;
+align-items: center;
+
+
 }
 
 iframe{
-  width: 200px;
+  width: 100px;
   height: 350px;
 }
 .logo_firstname{
-  font-size: 45px;
-  font-weight: 900;
+  font-size: 5px;
+  font-weight: 800;
+
 }
 #input-search{
-  width: 250px;
+  width: 150px;
   
 }
 
@@ -822,10 +824,7 @@ line-height: 22px;
 ===================*/
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> bb90a262a8d728c2109784d37f75ef12f62cddb3
 .ver-container {
   margin: 200px 0 150px 225px;
   width: 1020px;
@@ -1064,7 +1063,7 @@ margin-right: auto;
  
 }
 .initial_container{
-  margin: 240px;
+  margin-top: 240px;
 
 }
 .wk_name{

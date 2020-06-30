@@ -38,10 +38,7 @@ function Verification() {
                         </form>
                         <button className="showpreview_btn">SHOW PREVIEW </button>
                         <button className="cancel_btn" >CANCEL</button>
-<<<<<<< HEAD
                         <button className="cancel" >CANCEL</button>
-=======
->>>>>>> bb90a262a8d728c2109784d37f75ef12f62cddb3
                         <div className="bottom disclaimer">
                             <h3>Disclaimer:</h3>
                             <p>Content that violates any copyrights will be deleted. 
