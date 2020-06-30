@@ -1,5 +1,4 @@
 import React from 'react';
-// import logo from './public/assets/Sephora_logo.png';
 
 
 
@@ -37,8 +36,6 @@ class Sephora extends React.Component{
 
         <section className="info-text-card">
             <div className="slogo-container"></div>
-            {/* <img className="sephora-logo" src="./src/assets/Sephora_logo.png" alt="sephora logo" /> */}
-            {/* <img className="" src={logo} alt="slogo" /> */}
             <div className="jump-to-sec"> 
             
                 <label for="subject">JUMP TO:</label>

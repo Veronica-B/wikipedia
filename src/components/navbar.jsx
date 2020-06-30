@@ -29,6 +29,9 @@ function Navbar() {
       <div className="wiki-logo"></div>
       <nav className="navbar">
    <ul className="nav-links">
+    <li>
+       <Link to="#">About</Link>
+     </li>
      <li>
        <Link to="/">Home</Link>
      </li>
@@ -47,10 +50,10 @@ function Navbar() {
      <li>
        <Link to="/verification">(verify)</Link>
      </li>
-
-     
    </ul>
+
  </nav>
+ <div className="search-bar-container"><input type="text" placeholder="Search Wikipedia.org" className="search-bar" /></div> 
 
       </section>
       </header>

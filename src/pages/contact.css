@@ -1,6 +1,6 @@
-body{
+/* body{
     font-family: 'Amiri', serif;
-}
+} */
 .hero-image {
     position:relative;
     width:100%;
@@ -9,6 +9,7 @@ body{
     background:url("./imgs/map.jpg") no-repeat center;
     background-color: gray;
     background-size:cover;
+    margin-top: 100px;
     /*filter: blur(3px);
   -webkit-filter: blur(3px);*/
     
@@ -64,9 +65,18 @@ body{
 
 .contact-info-style{
   text-align: center;
-  
+  line-height: 40px;
 }
 
+.contact-info-style h2 {
+  font-size: 30px;
+}
+
+.contact-info-style p {
+  font-family: 'Amiri', serif;
+  font-size: 20px;
+  
+}
 
 .grid-container{
 
