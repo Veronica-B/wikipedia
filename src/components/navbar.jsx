@@ -53,7 +53,9 @@ function Navbar() {
    </ul>
 
  </nav>
+ <form action="http://localhost:3000/sephora" target= "_blank" method="GET">
 <input type="text" placeholder="Search Wikipedia.org" className="search-bar" />
+</form>
 
       </section>
       </header>
