@@ -10,6 +10,76 @@
     box-sizing: border-box;
     
   }
+
+  .headerContainer {
+    background: #3D405B;
+    max-width: 100%;
+    height: 130px;
+    font-family: inherit;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    line-height: 0.5px;
+  }
+  
+  .wiki-logo {
+    background: url("../src/assets/wiki-logo.png") no-repeat center;
+    background-size: 150px 150px;
+    width: 150px;
+    height: 100px;
+    /* float: left; */
+    margin-left: 85px;
+    margin-top: 10px;
+  }
+  
+  
+  .navbar{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+    margin-top: 50px;
+  }
+  
+  .nav-links li{
+    list-style:none;
+    display: inline-block;
+    
+  }
+  
+  .nav-links li a{
+    color: #F0EFEB;
+    font-weight:bold;
+    letter-spacing:2px;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 25px;
+    }
+  
+  .nav-links li a:hover {
+    color: #cb997e;
+  }
+  
+  
+  .search-bar {
+    position: relative;
+    top: 30px;
+    left: 210px;
+    font-size: 18px;
+    line-height: 20px;
+    height: 30px;
+    padding: 0.5rem;
+    width: 275px;
+  }
+  
+  
+  /*=======================
+  ================== HOME PAGE =================
+  ===================*/
+  
+  
+  
 /**** Contact page ****/
 .container h1{
   font-size:30px;
@@ -42,6 +112,80 @@
     box-sizing: border-box;
     
   }
+
+  /*=========== NAVBAR ========
+===================*/
+
+.headerContainer {
+  background: #3D405B;
+  max-width: 100%;
+  height: 130px;
+  font-family: inherit;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  line-height: 0.5px;
+}
+
+.wiki-logo {
+  background: url("../src/assets/wiki-logo.png") no-repeat center;
+  background-size: 150px 150px;
+  width: 150px;
+  height: 100px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+
+.navbar{
+  display: flex;
+  justify-content: flex-end;
+  max-width: 100%;
+  margin-top: 50px;
+}
+
+.nav-links li{
+  list-style:none;
+  display: inline-block;
+  
+}
+
+.nav-links li a{
+  color: #F0EFEB;
+  font-weight:bold;
+  letter-spacing:2px;
+  text-decoration: none;
+  padding: 8px;
+  font-size: 30px;
+  }
+
+.nav-links li a:hover {
+  color: #cb997e;
+}
+
+
+.search-bar {
+  position: relative;
+  top: 30px;
+  left: 300px;
+  font-size: 18px;
+  line-height: 20px;
+  height: 30px;
+  padding: 0.5rem;
+  width: 300px;
+}
+
+
+/*=======================
+================== HOME PAGE =================
+===================*/
+
+
+
+
   /****** Contact Page ******/
 
   .drop-down-arrow{
@@ -206,7 +350,7 @@ td {
 
 .slogo-container {
   background: url("../src/assets/Sephora_logo.png") no-repeat center;
-  background-size: 595px 100px;
+  background-size: 625px 100px;
   width: 650px;
   height: 100px;
   margin-bottom: 75px;
@@ -274,39 +418,78 @@ line-height: 22px;
 .ver-container {
   margin: 200px 0 150px 225px;
   width: 1020px;
+<<<<<<< HEAD
   height: 900px;
+=======
+  height: 1065px;
+>>>>>>> 36d7e3ee76ac89fc3ef8e27eb4bdc022dea5b767
   background-color: #A5A58D;
   border-radius: 10px;
 }
 
 .editVer-section {
   width: 1000px;
+<<<<<<< HEAD
   height: 600px;
+=======
+  height: 1065px;
+>>>>>>> 36d7e3ee76ac89fc3ef8e27eb4bdc022dea5b767
   padding-left: 50px;
 }
 
 .ver-slogo-container {
   background: url("../src/assets/Sephora_logo.png") no-repeat center;
-  background-size: 350px 50px;
-  width: 350px;
-  height: 150px;
-  margin: 0 0 0 550px;
+  background-size: 550px 100px;
+  width: 550px;
+  height: 250px;
+  margin: 0px 0 0 180px;
   padding-top: 75px;
 }
 
 .editVer-section h3 {
   line-height: 45px;
   max-width: 450px;
-  font-size: 20px;
+  font-size: 23px;
   font-family: inherit;
 }
 
 .ver-text-field {
   line-height: 30px;
-  font-size: 18px;
+  font-size: 20px;
   padding: 10px;
   width: 900px;
   margin-bottom: 15px;
+  font-family: serif;
+}
+
+.disclaimer {
+  height: 50px;
+  width: 400px;
+  
+}
+
+.disclaimer h3 {
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.disclaimer p {
+  font-size: 13px;
+  font-style: italic;
+  text-align: center;
+}
+
+.top {
+  position: relative;
+  bottom: 50px;
+  left: 50px;
+  width: 800px;
+  margin-top: 25px;
+}
+
+.bottom {
+  margin-top: 30px;
+  float:left;
 }
 
 button{
@@ -314,7 +497,7 @@ button{
   font-weight: bolder;
   padding: 10px 20px 10px 20px;
   float: right;
-  margin: 10px;
+  margin: 50px 10px 10px 10px;
   font-family: Helvetica,Arial,sans-serif;
   border-radius: 9px;
 }
@@ -324,8 +507,6 @@ button:focus {
   animation: pulse 1s;
   box-shadow: 0 0 0 2em rgba(#fff,0);
 }
-
-
 
 
 .publishhhhh{
@@ -343,12 +524,13 @@ background: #3d405b;
 .txtcontain{
   border-radius: 10px;
   padding: 10px;
-  font-family: Helvetica,Arial,sans-serif;
   letter-spacing: 1px;
-  font-size: 15px;
+  font-size: 17px;
   max-width: 900px;
-  
+  font-family: serif;
 }
+
+
 input{
   border-radius: 10px;
 }
