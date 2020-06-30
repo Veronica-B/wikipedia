@@ -57,16 +57,15 @@ class Sephora extends React.Component{
                         <option value="9">Awards & Honors</option>
                     </select>
             </div>                
-           
+            <div className="check-container"><i class="far fa-check-circle fa-lg"></i></div>
+            <a href= "http://localhost:3000/verification" className="edit-text"> [ edit ]</a>
             {article.map((data, index) => {
-                let section_headers= `data.section_header`.concat([count])
-                let sections= `data.section`.concat([count])
+                   let section_headers= data[`section_header${count}`]
+                   let sections= data[`section${count}`]
                 return(
                     <div className="sephora-info">
-                         <h3>{Object.values(eval(section_headers))}</h3>
-                        <div className="check-container"><i class="far fa-check-circle fa-lg"></i></div>
-                                <div className="edit-text"> [ edit ]</div>
-                                    <p>{Object.values(eval(sections))}</p>
+                         <h3>{section_headers}</h3>
+                                    <p>{sections}</p>
                     </div>
                 )}
             )}

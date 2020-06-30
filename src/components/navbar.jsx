@@ -35,9 +35,9 @@ function Navbar() {
      <li>
        <Link to="/">Home</Link>
      </li>
-     <li>
+     {/* <li>
        <Link to="/sephora">(sep)</Link>
-     </li>
+     </li> */}
 
      <li>
        <Link to="#">Donate</Link>
@@ -47,9 +47,9 @@ function Navbar() {
        <Link to="/contact">Contact</Link>
      </li>
 
-     <li>
+     {/* <li>
        <Link to="/verification">(verify)</Link>
-     </li>
+     </li> */}
    </ul>
 
  </nav>
