@@ -13,13 +13,9 @@
 
   .headerContainer {
     background: #3D405B;
-    max-width: 100%;
+    width: 100vw;
     height: 545px;
     font-family: inherit;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
     z-index: 10;
     line-height: 0.5px;
   }
@@ -29,14 +25,13 @@
     background-size: 250px 250px;
     width: 250px;
     height: 200px;
-    margin-left: 215px;
+    margin-left: 30px;
   }
   
   
   .navbar{
     display: flex;
     justify-content: center;
-    max-width: 100%;
   }
   
   .nav-links li{
@@ -63,7 +58,7 @@
   .search-bar {
     position: relative;
     top: 30px;
-    left: 210px;
+    left: 25px;
     font-size: 18px;
     line-height: 20px;
     height: 50px;
@@ -226,16 +221,19 @@ line-height: 22px;
 .fab {
   width: 50px;
   text-decoration: none;
-  color:#F0EFEB;
-  }
+  color: #F0EFEB;
+}
   
   .fab:hover {
       color: #cb997e;
   }
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> bb90a262a8d728c2109784d37f75ef12f62cddb3
 /* Home Page */
 
 #input-search{
@@ -711,7 +709,7 @@ body {
 }
 
 
-.grid-container {
+.sep-grid-container {
   display: grid;
   grid-template-columns: 650px 125px 500px;
   padding: 5px;
@@ -824,6 +822,77 @@ line-height: 22px;
 ================== VERIFICATION PAGE =================
 ===================*/
 
+<<<<<<< HEAD
+=======
+
+
+.ver-container {
+  margin: 200px 0 150px 225px;
+  width: 1020px;
+  height: 1080px;
+  background-color: #A5A58D;
+  border-radius: 10px;
+}
+
+.editVer-section {
+  width: 1000px;
+  height: 1080px;
+  padding-left: 50px;
+}
+
+.ver-slogo-container {
+  background: url("../src/assets/Sephora_logo.png") no-repeat center;
+  background-size: 450px 100px;
+  width: 450px;
+  height: 150px;
+  margin: 0 0 0 275px;
+  padding-top: 75px;
+}
+
+.editVer-section h3 {
+  line-height: 45px;
+  max-width: 450px;
+  font-size: 20px;
+  font-family: inherit;
+}
+
+.ver-text-field {
+  line-height: 30px;
+  font-size: 18px;
+  padding: 10px;
+  width: 900px;
+  margin-bottom: 15px;
+}
+
+.publishhhhh_btn {
+  letter-spacing: 3px;
+  font-weight: 40px;
+  padding: 10px 20px 10px 20px;
+  float: right;
+  margin: 10px;
+  font-family: Helvetica,Arial,sans-serif;
+  border-radius: 9px;
+}
+.showpreview_btn{
+  letter-spacing: 3px;
+  font-weight: 40px;
+  padding: 10px 20px 10px 20px;
+  float: right;
+  margin: 10px;
+  font-family: Helvetica,Arial,sans-serif;
+  border-radius: 9px;
+}
+button 
+button:hover, 
+button:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(#fff,0);
+}
+
+
+
+
+>>>>>>> bb90a262a8d728c2109784d37f75ef12f62cddb3
 .publishhhhh_btn{
 color: #F0EFEB;
 background: #3d405b;
