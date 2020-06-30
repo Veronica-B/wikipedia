@@ -24,11 +24,11 @@ function Verification() {
                                 nail color, beauty tools, and haircare. The company was founded in Limoges in 1970 and is currently based in Paris. Sephora is owned by luxury conglomerate
                                 LVMH as of 1997. The name comes from the Greek spelling of Zipporah (Greek: Σεπφώρα, Sepphōra), wife of Moses.
                             </textarea>
-                            <button className="publishhhhh" >PUBLISH</button>
+                            <button className="publishhhhh_btn" >PUBLISH</button>
                         </div>
                         </form>
                         <button className="showpreview_btn">SHOW PREVIEW </button>
-                        <button className="cancel" >CANCEL</button>
+                        <button className="cancel_btn" >CANCEL</button>
                     </div>
                 </section>
 
