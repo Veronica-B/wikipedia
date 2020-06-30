@@ -1,27 +1,29 @@
 # Wikipedia
 
+The wikipedia website is a redesign and a  vision of the original. It has been tailored and upgraded according to user experiences. This app contains four pages: home page , sephora page , verification page , and the contact page.
+
 ## Getting Started
 
 1. Clone or download this repository onto your local machine
 2. Install the node packages in the wiki folder. <br />
- a. You can do this by running **`npm i`** on your command line tool.
+ a. You can do this by running **`npm i`** on your terminal.
  
 ## Running the App 
 
 ### To start the react-app, 
 1. Cd into the wiki folder
-2. On the command line type **`npm start`**
+2. On the terminal type **`npm start`**
 
 ### To start the express server,
 1. Open new terminal tab
 2. Cd into the wiki folder
-3. On the command line type **`node server`**
+3. On the terminal line type **`node server`**
 
 ## Stopping the App 
 
 ### To stop the express server,
 1. Cd into the wiki folder
-2. On the command line hit "control" and "c" at the same time
+2. On the terminal hit "control" and "c" at the same time
 
 The server should be closed after step 2.
 
