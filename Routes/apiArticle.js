@@ -8,7 +8,7 @@ require('dotenv').config();
 //middleware that makes it process POST requests easier 
 router.use(bodyParser.urlencoded({extended: false}))
 
-//Statement to SELECT ALL from the table Form
+//Statement to SELECT ALL from the table article
 const selectAll= 'SELECT * FROM article ';
 
 
