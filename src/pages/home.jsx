@@ -14,9 +14,9 @@ function Home() {
                     <img className="wikipedia_logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt="wiki-hero"/>
                     <div className="ui action input">
                     <form action="http://localhost:3000/sephora" target= "_blank" method="GET" class="btn-form">
-                        <ul>
-                        <li><input type="text" placeholder="Search Wikipedia.org" className="search" id="input-search" /></li>
-                        <li><button className="search ui button" id="button-search">Search</button></li>
+                        <ul className="no-dots">
+                        <li className="no-dots"><input type="text" placeholder="Search Wikipedia.org" className="search" id="input-search" /></li>
+                        <li className="no-dots"><button className="search ui button" id="button-search">Search</button></li>
                         </ul>
                         </form>
                     </div>

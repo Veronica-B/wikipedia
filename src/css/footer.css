@@ -1,4 +1,4 @@
-.footer {
+/* .footer {
     width: 100%;
     position: relative;
     height: auto;
@@ -59,7 +59,7 @@
     font-size: 48px;
     padding: 20px 20px 10px 20px;
     color:white;
-  }
+  } */
   @media only screen and (min-width: 1280px) {
     .contain {
       width: 1200px;
@@ -76,8 +76,8 @@
     }
   }
   @media only screen and (max-width: 950px) {
-    .footer .col {
-      /* width: 33%; */
+    /* .footer .col {
+      width: 33%;
       max-width: 200px;
     }
     .footer .col h1 {
@@ -85,10 +85,10 @@
     }
     .footer .col ul li {
       font-size: 13px;
-    }
+    } */
   }
   @media only screen and (max-width: 500px) {
-      .footer .col {
+      /* .footer .col {
         width: 50%;
       }
       .footer .col h1 {
@@ -96,10 +96,10 @@
       }
       .footer .col ul li {
         font-size: 13px;
-      }
+      } */
   }
   @media only screen and (max-width: 340px) {
-    .footer .col {
+    /* .footer .col {
       width: 100%;
-    }
+    } */
   }
