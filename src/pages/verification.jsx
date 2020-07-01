@@ -19,7 +19,7 @@ function Verification() {
                             you agree to the Terms of Use, and you irrevocably agree to release your contribution under 
                             the CC BY-SA 3.0 License and the GFDL.</p>
                             </div>
-                        <form method="POST" action="/api/verification">
+                        <form method="POST" action="/api/verification" className="ver-form">
                         <h3>Article Name:</h3>
                         <input type="text" placeholder="Sephora" class="ver-text-field" name="article_name"/>
                         <h3>Section Header:</h3>
