@@ -7,19 +7,19 @@ import React from 'react';
 function Home() {
     return (
         <React.Fragment>
-            <div>
                 <div className="initial_container">
                     <h1 className="logo_firstname">WIKIPEDIA</h1>
                     <h4 className="wk_name">The Free Encyclopedia</h4>
 
                     <img className="wikipedia_logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt="wiki-hero"/>
                     <div className="ui action input">
-                    <form action="http://localhost:3000/sephora" target= "_blank" method="GET">
-                        <input type="text" placeholder="Search Wikipedia.org" className="search" id="input-search" />
-                        <button className="search ui button btn-wiki" id="button-search">Search</button>
+                    <form action="http://localhost:3000/sephora" target= "_blank" method="GET" class="btn-form">
+                        <ul>
+                        <li><input type="text" placeholder="Search Wikipedia.org" className="search" id="input-search" /></li>
+                        <li><button className="search ui button" id="button-search">Search</button></li>
+                        </ul>
                         </form>
                     </div>
-                </div>
                  <section className="history_container">
 
                         <iframe width="2900" height="355" title="history-of-wiki" src="https://www.youtube.com/embed/oVFPW0r4jWk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
