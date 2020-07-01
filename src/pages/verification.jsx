@@ -39,7 +39,7 @@ function Verification() {
                         <button className="showpreview_btn">SHOW PREVIEW </button>
                         <button className="cancel_btn" >CANCEL</button>
                         <div className="bottom disclaimer">
-                            <h3>Disclaimer:</h3>
+                            <h3>Disclaimer</h3>
                             <p>Content that violates any copyrights will be deleted. 
                             Encyclopedic content must be verifiable. Work submitted to Wikipedia can be used and
                             edistributed—by anyone—subject to certain terms and conditions. By publishing changes to be reviewed, 
