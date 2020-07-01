@@ -72,6 +72,101 @@
   ===================*/
   
 
+  .logo_firstname{
+    text-align: center;
+    font-family: inherit;
+    font-size: 39px;
+    margin-bottom: 20px;
+    letter-spacing: 10px;
+    margin-top:20px;
+  }
+  .wikipedia_logo {
+    height: 250px;
+    width: 250px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+  .wk_name{
+    margin-bottom: 50px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Amiri', serif;
+  }
+  .history_container{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  
+  font-size: 22px;
+  background-color: #a5a58d;
+  margin-top: 50px;
+  }
+
+  .history_container p {
+  font-family: 'Amiri', serif;
+  }
+  .video_title{
+  margin-bottom: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .info_hist{
+  text-align: center;
+  /* margin: 0 75px 35px 45px; */
+  line-height: 30px;
+  /* margin-top: 40px; */
+  }
+  /* Search bar  */
+  .ui.input {
+    text-align: center;
+    /* margin: 4em auto; */
+    color: #000;
+    box-sizing: border-box;
+    position: relative;
+    /* right: 50px; */
+  }
+  .search {
+    width: 150px;
+    background: #fff;
+    color: #000;
+    box-shadow: 1px 1px 0px #8e8a8a;
+    font-size: 18px;
+    line-height: 22px;
+    height: 40px;
+    border: 2px solid #B0BABF;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  
+  #button-search{
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 80px;
+
+  }
+  #input-search:hover, #input-search .active {
+    border-color: #CB997E;
+    outline: none;
+  }
+  .ui.input > button:hover, button:active, button:focus {
+    outline: none;
+    color: #CB997E;
+  }
+  input {
+    width: 35%;
+  }
+  #input-search{
+    width: 250px;
+    margin-top: 30px;
+  }
+ 
+  iframe{
+    width: 320px;
+    height: 350px;
+  }
+
   /*=======================
 ================== MAIN CONTENT PAGE =================
 ===================*/
@@ -198,26 +293,6 @@ line-height: 22px;
 }
 
 
-/**** Contact page ****/
-.container h1{
-  font-size:30px;
-}
-.drop-down-arrow{
-  padding-left: 191px ; 
-}
-.contact-info-style p {
-  font-size: 15px;;
-
-}
-.contact-form{
-  padding-right: 0px ; 
-  padding-left: 33px ;
-}
-
-
-/*===========FOOTER ========
-===================*/
-
 .fab {
   width: 50px;
   text-decoration: none;
@@ -253,7 +328,6 @@ iframe{
   width: 250px;
   
 }
-
 
 
 
@@ -302,6 +376,44 @@ button{
   max-width: 75vw;
   display: block;
 }
+
+
+/**** Contact page ****/
+.container h1{
+  font-size:30px;
+}
+.drop-down-arrow{
+  padding-left: 191px ; 
+}
+.contact-info-style p {
+  font-size: 15px;;
+
+}
+.contact-form{
+  padding-right: 0px ; 
+  padding-left: 33px ;
+}
+
+
+/*===========FOOTER ========
+===================*/
+
+.fab {
+  width: 50px;
+  text-decoration: none;
+  color: #F0EFEB;
+}
+  
+  .fab:hover {
+      color: #cb997e;
+  }
+
+
+
+
+
+
+
 }
 /*=======================
 ================== TABLET DEVICES =================
@@ -317,7 +429,7 @@ button{
     
   }
 
-
+/*verification page*/
 .ver-container {
  margin: 200px 0px 100px 0px;
   width: 100vw;
@@ -610,7 +722,7 @@ line-height: 22px;
 ===================*/
 
 
-@media screen and (min-width: 1026px) {
+ @media screen and (min-width: 1026px) {
 
 * {
   margin:0px;
@@ -686,10 +798,102 @@ line-height: 22px;
 }
 
 
-/*=======================
-================== HOME PAGE =================
+/*===========HOME ========
 ===================*/
 
+.logo_firstname{
+  text-align: center;
+  font-family: inherit;
+  font-size: 100px;
+  margin-bottom: 20px;
+  letter-spacing: 15px;
+}
+
+.wikipedia_logo {
+  height: 250px;
+  width: 250px;
+  display: block;
+margin-left: auto;
+margin-right: auto;
+ 
+}
+.initial_container{
+  margin-top: 240px;
+
+}
+.wk_name{
+  margin-bottom: 50px;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Amiri', serif;
+}
+
+.history_container{
+display: flex;
+align-items: center;
+padding: 20px 0 50px 135px;
+font-size: 22px;
+background-color: #a5a58d;
+margin-top: 100px;
+}
+
+.history_container p {
+font-family: 'Amiri', serif;
+}
+
+.video_title{
+margin-bottom: 30px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.info_hist{
+text-align: center;
+margin: 0 75px 35px 45px;
+line-height: 30px;
+margin-top: 40px;
+}
+
+/* Search bar   */
+.ui.input {
+  text-align: center;
+  margin: 4em auto;
+  color: #000;
+  box-sizing: border-box;
+  position: relative;
+  right: 50px;
+}
+
+.search {
+  background: #fff;
+  color: #000;
+  box-shadow: 1px 1px 0px #8e8a8a;
+  font-size: 18px;
+  line-height: 22px;
+  height: 40px;
+  border: 2px solid #B0BABF;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+
+}
+#button-search{
+  border-radius: 10px;
+  
+}
+
+
+#input-search:hover, #input-search .active {
+  border-color: #CB997E;
+  outline: none;
+}
+
+.ui.input > button:hover, button:active, button:focus {
+  outline: none;
+  color: #CB997E;
+}
+
+input {
+  width: 35%;
+}
 
 
 
@@ -816,6 +1020,7 @@ line-height: 22px;
 ===================*/
 
 
+
 .ver-container {
   margin: 200px 0 150px 225px;
   width: 1020px;
@@ -918,7 +1123,7 @@ input{
 
 /*===========FOOTER ========
 ===================*/
-
+ }
 .fab {
   width: 50px;
   text-decoration: none;
@@ -929,5 +1134,129 @@ input{
       color: #cb997e;
   }
 
+
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: #3d405b;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: #A5A58D;
+  font-weight:bolder;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #F0EFEB;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
 }
 
+.footer .col ul li:hover {
+  color: #cb997e;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+.fa{
+  font-size: 48px;
+  padding: 20px 20px 10px 20px;
+  color:white;
+}
+ 
+/*
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}*/
+
+/* responsive */
+
+/* @media screen and (max-width: 768px){
+  #input-search{
+    width: 250px;
+  }
+
+  .history_container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 70px 30px;
+  }
+  iframe{
+    width: 400px;
+    height: 350px;
+  }
+}
+ */
