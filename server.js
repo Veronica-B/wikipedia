@@ -17,14 +17,16 @@ app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
 });
 
-let router = require('./Routes/apiContact')
+/* let router = require('./Routes/apiContact')
 let router_v = require('./Routes/apiVerification')
 let router_a = require('./Routes/apiArticle')
-
 app.use('/api', router);
 app.use('/api', router_v);
 app.use('/api', router_a);
 app.use('/', require('./Routes/rootApi'));
+*/
+
+
 
 
 
