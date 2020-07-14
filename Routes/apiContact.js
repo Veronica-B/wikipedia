@@ -12,7 +12,6 @@ router.use(bodyParser.urlencoded({extended: false}))
 //Statement to SELECT ALL from the table Form
 const selectAll= 'SELECT * FROM Form ';
 
-
 //creates connection to mysql
 const connection = mysql.createConnection({
     host: process.env.MYSQL_HOST,
