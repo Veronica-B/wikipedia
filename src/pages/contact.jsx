@@ -4,15 +4,7 @@ import '../css/contact.css' ;
 
 
 class Contact extends React.Component {
-        // const [users, setMessage]= useState({customers: [] });
-        
-        constructor(props){
-          super(props)
-          this.state = {
-            contact: [],
-            error : false
-          }
-        }
+
             render(){
           return (
             <div className="App">
