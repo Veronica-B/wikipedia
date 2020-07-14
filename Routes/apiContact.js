@@ -5,11 +5,13 @@ const bodyParser = require('body-parser');
 // const connection=require('./connection.js')
 require('dotenv').config();
 
+
 //middleware that makes it process POST requests easier 
 router.use(bodyParser.urlencoded({extended: false}))
 
 //Statement to SELECT ALL from the table Form
 const selectAll= 'SELECT * FROM Form ';
+
 
 //creates connection to mysql
 const connection = mysql.createConnection({

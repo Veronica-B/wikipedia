@@ -5,6 +5,7 @@ const bodyParser = require('body-parser')
 // const connection=require('./connection.js')
 require('dotenv').config();
 
+
 //middleware that makes it process POST requests easier 
 router.use(bodyParser.urlencoded({extended: false}))
 

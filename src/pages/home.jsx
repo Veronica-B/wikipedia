@@ -11,9 +11,7 @@ function Home() {
                     <h1 className="logo_firstname">WIKIPEDIA</h1>
                     <h4 className="wk_name">The Free Encyclopedia</h4>
 
-                    <img className="wikipedia_logo" 
-                    src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" 
-                    alt="wiki-hero"/>
+                    <img className="wikipedia_logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png" alt="wiki-hero"/>
                     <div className="ui action input">
                     <form action="http://localhost:3000/sephora" target= "_blank" method="GET" class="btn-form">
                         <ul className="no-dots">

@@ -4,6 +4,7 @@ const bodyParser = require('body-parser')
 // const connection=require('./connection.js')
 require('dotenv').config();
 
+
 //middleware that makes it process POST requests easier 
 router.use(bodyParser.urlencoded({extended: false}))
 
@@ -48,6 +49,46 @@ router.get('/article/:article_id',(req, res)=>{
     });
 });
 
+
+//adds a database entry
+// router.post('/article', (req, res) => {
+//     console.log('initially working')
+//     console.log(req.body)
+
+//         // id:  ++ 1,
+//         const article_name= req.body.article_name;
+//         const section_header1 =req.body.section_header1;
+//         const section1 =req.body.section1;
+//         const section_header2 =req.body.section_header2;
+//         const section2 =req.body.section2;
+//         const section_header3 =req.body.section_header3;
+//         const section3 =req.body.section3;
+//         const section_header4 =req.body.section_header4;
+//         const section4 =req.body.section4;
+//         const section_header5 =req.body.section_header5;
+//         const section5 =req.body.section5;
+//         const section_header6 =req.body.section_header6;
+//         const section6 =req.body.section6;
+//         const section_header7 =req.body.section_header7;
+//         const section7 =req.body.section7;
+//         const section_header8 =req.body.section_header8;
+//         const section8 =req.body.section8;
+//         const section_header9 =req.body.section_header9;
+//         const section9 =req.body.section9;
+
+//         const insertInto=  `INSERT INTO article(article_name, section_header1, section1, section_header2, section2,
+//             section_header3, section3,section_header4, section4, section_header5, section5,section_header6, section6,
+//             section_header7, section7, section_header8, section8, section_header9, section9)
+//             VALUES( ?, ?, ? , ? , ? , ?, ? , ? , ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`;
+        
+// connection.query(insertInto, [ article_name, section_header1, section1, section_header2, section2,
+//     section_header3, section3,section_header4, section4, section_header5, section5,section_header6, section6,
+//     section_header7, section7, section_header8, section8, section_header9, section9], (err, data, fields)=> {
+//           if(err) throw err;
+//           console.log(`it works heres a name: ${article_name} `)
+//           res.end();
+// })
+// });
 
 
 //deletes a single database entry
