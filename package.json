@@ -4,7 +4,7 @@
   "description": "The wikipedia website is a redesign and a  vision of the original. It has been tailored and upgraded according to user experiences. This app contains four pages: home page , sephora page , verification page , and the contact page.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "heroku-postbuild":"cd client && npm install --only=dev && npm install && npm run build"
   },
   "repository": {
