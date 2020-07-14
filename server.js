@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 let router =require('./Routes/apiContact')
 let router_v =require('./Routes/apiVerification')
 let router_a =require('./Routes/apiArticle')
-require('./client/node_modules/dotenv/types').config();
+require('./node_modules/dotenv/types').config();
 app.use(express.json()); // turns my app into a json 
 app.use(cors());
 
