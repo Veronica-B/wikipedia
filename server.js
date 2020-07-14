@@ -4,8 +4,8 @@ const bodyParser = require('body-parser')
 const path = require('path');
 const cors = require('cors')
 const app = express();
-const dotenv = require('dotenv')
-dotenv.config();
+require('dotenv').config();
+
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.json()); // turns my app into a json 
 app.use(cors());
@@ -24,6 +24,7 @@ let router_a = require('./Routes/apiArticle')
 app.use('/api', router);
 app.use('/api', router_v);
 app.use('/api', router_a);
+app.use('/', require('./Routes/rootApi'));
 
 
 
