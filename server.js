@@ -15,7 +15,7 @@ app.use(express.json()); // turns my app into a json
 app.use(cors());
 
 //sets server up
-app.listen(process.env.PORTSERVER, () => {
+app.listen(process.env.PORTSERVER || 3000, () => {
   console.log(`Server running on port 8080`);
 })
 
