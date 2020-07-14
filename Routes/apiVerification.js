@@ -3,8 +3,8 @@ const router = require('express').Router();
 const mysql = require('mysql');
 const bodyParser = require('body-parser')
 // const connection=require('./connection.js')
-require('./node_modules/dotenv/types').config();
-
+const dotenv = require('dotenv')
+dotenv.config();
 
 //middleware that makes it process POST requests easier 
 router.use(bodyParser.urlencoded({extended: false}))
