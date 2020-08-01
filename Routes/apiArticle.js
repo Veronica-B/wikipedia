@@ -50,6 +50,15 @@ router.get('/article/:article_id',(req, res)=>{
 });
 
 
+//deletes a single database entry
+router.delete('/article/:article_id',(req, res)=>{
+    connection.query(`DELETE FROM article WHERE article_id = ${req.params.article_id}`, (err, result) => {
+            if(err) throw err;
+            console.log(result);
+            res.send(result)    
+    });
+});
+
 //adds a database entry
 // router.post('/article', (req, res) => {
 //     console.log('initially working')
@@ -90,14 +99,5 @@ router.get('/article/:article_id',(req, res)=>{
 // })
 // });
 
-
-//deletes a single database entry
-router.delete('/article/:article_id',(req, res)=>{
-    connection.query(`DELETE FROM article WHERE article_id = ${req.params.article_id}`, (err, result) => {
-            if(err) throw err;
-            console.log(result);
-            res.send(result)    
-    });
-});
 
 module.exports = router;
